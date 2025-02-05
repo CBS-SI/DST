@@ -1,14 +1,13 @@
-# Denmark Statistics
+# Statistics Denmark at SI
 
-## Resources
+## What's Statistics Denmark?
 
-- [Transferring of analysis results](https://www.dst.dk/en/TilSalg/Forskningsservice/hjemtagelse-af-analyseresultater)
+_"Statistics Denmark offers remote access to all individual level data that is necessary to carry out a serious research project. [...] individual level data from Statistics
+Denmark is not delivered to any external firm, institution, or person. Instead, datasets and linkages between datasets constructed at Statistics Denmark are stored at Statistics Denmark."_
 
-- [Rules for data safety under the microdata scheme hereunder rules for transferring analysis results and sanctions in case of data breach](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=38014105383&fo=0&ext=forskning)
+_"Researchers employed at specific authorised environments can establish remote online access to these datasets stored at Statistics Denmark. [...] For security reasons, only researchers employed at authorised research institutions can get access to individual level data at Statistics Denmark."_
 
-- [Certification of Users via Denmark’s Data Portal](https://www.dst.dk/en/TilSalg/Forskningsservice/danmarks-datavindue/om-danmarks-datavindue/certificering-af-brugere)
-
-- [Variable description from Statistics Denmark's Metadata Bank](https://www.dst.dk/da/Statistik/dokumentation/Times)
+_"Although researcher may get access to rather detailed individual level data, they are only allowed to publish statistical analyses and results at an aggregate level where no single person or enterprise may be identified."_ [Source](https://journals.sagepub.com/doi/epdf/10.1177/1403494811399956)
 
 ## Security Rules Summary
 
@@ -32,7 +31,7 @@
 
 - **No Pseudonymised key variables**. Personal identification numbers, CVR numbers, workplace numbers, address codes, etc. are always considered microdata as they indicate a unique number that refers directly to a single person or company.
 
-- No tables with less than three observations per cell. Microdata Example:
+- No tables with less than three observations per cell. Microdata Examples:
 
 | Bopæl          | Antal personer |
 | -------------- | -------------- |
@@ -42,8 +41,6 @@
 | Odense         | 2              |
 | Aarhus         | 3              |
 | **Hovedtotal** | **13**         |
-
----
 
 | Bopæl          | Antal personer | Sum af indkomst |
 | -------------- | -------------- | --------------- |
@@ -77,21 +74,7 @@ dominance"_ [Source](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx
 
 - The institution register shall not be allowed to transfer information at institution level other than the institution number (e.g. `SI` cannot transfer DST data to `ECON`)
 
-## Penalties
-
-Here's the table converted to markdown format:
-
-# Researcher scheme
-
-| Type of Violation                                       | Sanction against user                |                                                                                                       | Sanction against project          |                                                                             | Sanction against institution             |                                                                                                             |
-| ------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Sanction**                                            | Access to all user's projects closed |                                                                                                       | Access to the project closed      |                                                                             | Access for all users and projects closed |                                                                                                             |
-| **Transferring of individual or company data**          | 1st time                             | 2nd time within 2 years                                                                               | 1st time                          | 2nd time within 2 years                                                     | 3rd time within 2 years                  | 4th time within 2 years                                                                                     |
-| **Password or access shared by authorized user**        |                                      |                                                                                                       |                                   |                                                                             |                                          |                                                                                                             |
-| **Minor breach (Accident or inadvertent action\*)**     | Until explanation can be approved    | 1-month quarantine                                                                                    | Until explanation can be approved | 1-month quarantine                                                          | 3-month quarantine                       | Specific assessment<br>Possibility of termination of authorization agreement                                |
-| **Serious breach (Accident or inadvertent action**)\*\* | 3-month quarantine                   | 3-month quarantine<br>Possibility of termination of authorization agreement and or the user agreement | 3-month quarantine                | 3-month quarantine<br>Possibility of termination of authorization agreement | 6-month quarantine                       | Specific evaluation of authorization agreement, with possibility of termination of authorization agreement. |
-
-## Accessing Denmark’s Statistics (DST) Portal
+## Accessing Statistics Denmark (DST) Portal
 
 A test on on data security must be passed to get a certification to access Denmark’s Data Portal. It test that you know the information in the section above based on [Rules for data safety under the microdata scheme hereunder rules for transferring analysis results and sanctions in case of data breach](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=38014105383&fo=0&ext=forskning).
 
@@ -110,6 +93,18 @@ Steps:
 You need to answer all questions correctly.
 
 After the test, you can see under "Result" how many remaining attempts you have and how many questions you answered incorrectly.
+
+## Resources
+
+- [Transferring of analysis results](https://www.dst.dk/en/TilSalg/Forskningsservice/hjemtagelse-af-analyseresultater)
+
+- [Rules for data safety under the microdata scheme hereunder rules for transferring analysis results and sanctions in case of data breach](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=38014105383&fo=0&ext=forskning)
+
+- [Certification of Users via Denmark’s Data Portal](https://www.dst.dk/en/TilSalg/Forskningsservice/danmarks-datavindue/om-danmarks-datavindue/certificering-af-brugere)
+
+- [Introduction to Danish (nationwide) registers](https://journals.sagepub.com/doi/epdf/10.1177/1403494811399956)
+
+- [Variable description from Statistics Denmark's Metadata Bank](https://www.dst.dk/da/Statistik/dokumentation/Times)
 
 ## Change Log
 
