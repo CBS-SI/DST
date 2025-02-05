@@ -11,6 +11,8 @@ _"Although researcher may get access to rather detailed individual level data, t
 
 ## Security Rules Summary
 
+Based on [Rules for data safety under the microdata scheme hereunder rules for transferring analysis results and sanctions in case of data breach](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=38014105383&fo=0&ext=forskning).
+
 - No types of micro data can be transferred. Not through the transferring tool or in any other way. No person/business should be recognisable in the transferred output. **This also applies in data where the de-identified ID variable has been removed**. Income, education or socioeconomic status variables are specially penalized. Microdata Example:
 
 | KØN | INDKOMST | BOPÆL     | ALDER |
@@ -76,7 +78,7 @@ dominance"_ [Source](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx
 
 ## Accessing Statistics Denmark (DST) Portal
 
-A test on on data security must be passed to get a certification to access Denmark’s Data Portal. It test that you know the information in the section above based on [Rules for data safety under the microdata scheme hereunder rules for transferring analysis results and sanctions in case of data breach](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=38014105383&fo=0&ext=forskning).
+A test on on data security must be passed to get a certification to access Denmark’s Data Portal. It test that your DTS security and privacy knowledge.
 
 Steps:
 
