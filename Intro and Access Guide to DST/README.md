@@ -76,6 +76,10 @@ dominance"_ [Source](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx
 
 - The institution register shall not be allowed to transfer information at institution level other than the institution number (e.g. `SI` cannot transfer DST data to `ECON`)
 
+## Penalties
+
+![Penalties](https://github.com/CBS-SI/DST/blob/main/Intro%20and%20Access%20Guide%20to%20DST/images/penalties.png)
+
 ## Accessing Statistics Denmark (DST) Portal
 
 A test on on data security must be passed to get a certification to access Denmark’s Data Portal. It test that your DTS security and privacy knowledge.
