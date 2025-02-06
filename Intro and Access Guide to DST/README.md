@@ -72,9 +72,13 @@ dominance"_ [Source](https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx
 
 - No **code or logs that contains microdata written into a condition or lists**
 
-- All work with microdata must be carried out on the research machines.
+- All work with microdata must be carried out in your workplace or home workplace. You cannot work DST data in public (e.g. train, café).
 
 - The institution register shall not be allowed to transfer information at institution level other than the institution number (e.g. `SI` cannot transfer DST data to `ECON`)
+
+- You can list data in the research machine to validate it, but you cannot export it.
+
+- _External Sources_. Once you submit your data (e.g. a survey) to be linked to DST data, it is considered microdata regarless of the source and hold the same security standards are DST own data.
 
 ## Penalties (researcher scheme)
 
@@ -114,4 +118,5 @@ After the test, you can see under "Result" how many remaining attempts you have 
 
 ## Change Log
 
-- `Initial Draft`: 5th of February, 2025
+- `5th of February, 2025`: Initial draft
+- `6th of February, 2025`: Add more security info
