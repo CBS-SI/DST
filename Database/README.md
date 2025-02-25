@@ -781,6 +781,120 @@ https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-
 
 ### `tilladelsesdato`
 
-Date of residence permit
+Date of residence permit.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/tilladelsesdato
+
+### `akasaf`
+
+Last year as a member of A-kassa.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/akasaf
+
+### `akasst`
+
+Most recent start year as a member of the A-kassa.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/akasst
+
+### `aldernov`
+
+Age calculated at the end of November (reference period).
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/aldernov
+
+### `arledgr`
+
+Unemployment rate.
+
+The unemployment rate is calculated as the number of hours available in relation to the number of (possible) working hours for a given year.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/arledgr
+
+### `atpar`
+
+Number of years as an employee.
+
+A person who has been abroad and has therefore not been included in the population for one or more years will have his ATPAR reset.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/atpar
+
+### `ejnov`
+
+Number of supplementary non-November employment appointments.
+
+Employment with the largest ATP contribution is defined as being the most important non-November employment. Thus, when the most important non-November employment is selected, any additional non-November employment per year is counted.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/ejnov
+
+### `ejnovsum`
+
+The variable sums up wages in supplementary non-November-related employment in addition to the most important employment.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/ejnovsum
+
+### `erhver`
+
+Work experience (1000 "points" per fulltime employed year).
+
+The maximum work experience for part-time insured persons can be assumed 750 per person. per year and for the rest 1,000 per year.
+
+For people who have been abroad and therefore have not been included in the population for one or more years, `erhver` will be reset.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/erhver
+
+### `erhver79`
+
+Work experience from 1964 to the end of 1979 calculated on the basis of ATP contributions. It counts the number of years as an employee before 1980 for people born in 1921 - 1971.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/erhver79
+
+### `lonind`
+
+Salary based on SKAT employee reporting.
+
+All employers issue an information sheet to SKAT and their employees annually (during January). The information sheet is an overview of paid salary and contributions. nr. 13 specifies the net salary for each employment to which the information form relates.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/lonind
+
+### `nsup`
+
+Number of supplementary November-employment in addition to main and secondary employment per year.
+
+The employment that relates to November but not to the main or secondary employment is counted for the individual. The supplementary employment is only included if the amount is above the salary limit.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/nsup
+
+### `pstill`
+
+[TO BE DONE]
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/pstill
+
+### `sstill`
+
+[TO BE DONE]
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/sstill
+
+### `senafar`
+
+Latest completion of the labor market.
+
+Most recent termination of the labor market as employed or unemployed for 2 consecutive years.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/senafar
+
+### `senstar`
+
+Latest start in the labor market.
+
+Latest start in the labor market as employed or unemployed is formed from the primary job positio for 2 consecutive years.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/senstar
+
+### `startar`
+
+Year for the first time in the labor market.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/startar
