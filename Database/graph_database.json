@@ -1,0 +1,232 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+
+Table bef {
+  PNR integer [primary key, note: 'Personal ID']
+  MOR_ID integer [note: 'Mother ID']
+  FAR_ID integer [note: 'Father ID']
+  FAMILIE_ID integer [note: 'Family ID']
+  EFALLE integer [note: 'Couple Social Security number']
+  AEGTE_ID integer [note: 'Spouse ID']
+  BOPIKOM integer [note: 'Address Code']
+  ALDER integer [note: 'Age']
+  BOP_VFRA timestamp [note: 'Inmigration Date']
+  CIVST integer [note: 'Marital Status']
+  CIV_VFRA timestamp [note: 'Marital Status Change Date']
+  FAMILIE_TYPE integer [note: 'Family Type']
+  FM_MARK integer [note: 'Cohabit Type']
+  FOEDREG_KODE integer [note: 'Birth place']
+  FOED_DAG timestamp [note: 'Birthdate']
+  GENERATION integer [note: "Parents' Origin Code"]
+  HUSTYPE integer [note: 'Household Type']
+  IE_TYPE integer [note: 'Origin Type']
+  KOEN integer [note: 'Gender']
+  KOM integer [note: 'Municipal Code']
+  OPR_LAND integer [note: 'Origin Country Code']
+  PLADS integer [note: "'Place' within a couple"]
+  REG integer [note: 'Region Code']
+  STATSB integer [note: 'Citizenship Code']
+  VAN_VTIL timestamp [note: 'Inmigration Application Date']
+
+  Note: 'Generational and Inmigration data (1980-2016)'
+}
+
+Table poppers {
+  PNR integer [primary key, note: 'Personal ID']
+  ALDER integer [note: 'Age']
+
+  Note: 'Population basic data (1980-2013)'
+}
+
+Table fam {
+  FAMILIE_ID integer [primary key, note: 'Family Link ID']
+  HOVEDPERSON integer [note: 'Family Protagonist ID']
+  PAPNR integer [note: 'Family Partner ID']
+  BOPIKOM integer [note: 'Address Code']
+  ALDAELDST integer [note: 'Oldest child age in `E_FAMILIE`']
+  ALDYNGST integer [note: 'Youngest child age in `E_FAMILIE`']
+  ANTBOERNF integer [note: 'Number of children in the family']
+  ANTPERSF integer [note: 'Number of people within the family']
+  FAMILIE_TYPE integer [note: 'Type of family']
+  KOM integer [note: 'Municipal Code']
+
+  Note: 'Family data (1986-2016)'
+}
+
+Table fida {
+  PNR integer [primary key, note: 'Personal ID']
+  CVRNR integer [note: 'Business ID']
+  ARBNR integer [note: 'Workplace ID']
+  LBNR integer [note: 'Constant Workplace ID']
+
+  Note: 'Fida key IDA Company statistics (1995-2016)'
+}
+
+Table firm {
+  CVRNR integer [primary key, note: 'Business ID']
+  AAR integer [note: 'Year']
+  GF_AARE integer [note: 'Profits (kr.)']
+  GF_AARSV integer [note: 'Number of fulltime employees']
+  GF_AAT integer [note: 'Fixed assets (kr.)']
+  GF_AINV integer [note: 'Net Investment (kr.)']
+  GF_ANSATTE integer [note: 'Number of November-employees']
+  GF_AT integer [note: 'Total Assets (kr.) ']
+  GF_BAGATEL integer [note: 'Accounting class report Code']
+  GF_BAV integer [note: 'Gross profit (kr.)']
+  GF_BD_LS integer [note: 'Not documentation available']
+  GF_BD_MO integer [note: 'Not documentation available']
+  GF_BD_RE integer [note: 'Not documentation available']
+  GF_BG_METODE integer [note: 'Code for the method for determining the variable `GF_BAGATEL`']
+  GF_EGUL integer [note: 'Equity (kr.)']
+  GF_EKSP integer [note: 'Not documentation available']
+  GF_GR009_DB93 integer [note: '9-group Dansk Branchekode 1993 NACE classification']
+  GF_GR010_DB07 integer [note: '10-group Dansk Branchekode 2007 NACE classification']
+  GF_GR019_DB07 integer [note: '19-group Dansk Branchekode 2007 NACE classification']
+  GF_GR027_DB93 integer [note: '27-group Dansk Branchekode 1993 NACE classification']
+  GF_GR036_DB07 integer [note: '36-group Dansk Branchekode 2007 NACE classification']
+  GF_GR053_DB93 integer [note: '53-group Dansk Branchekode 1993 NACE classification']
+  GF_GR111_DB93 integer [note: '111-group Dansk Branchekode 1993 NACE classification']
+  GF_GR127_DB07 integer [note: '127-group Dansk Branchekode 2007 NACE classification']
+  GF_IMPORT integer [note: 'Imports (kr.)']
+  GF_INKLEJER integer [note: 'Number of employees (including the owner).']
+  GF_KOB integer [note: 'Domestic purchases plus imports (kr.)']
+  GF_LGAGNV integer [note: 'Total Payroll (kr.)']
+  GF_MK_EB integer [note: 'Not documentation available']
+  GF_MK_LS integer [note: 'Not documentation available']
+  GF_MK_MO integer [note: 'Not documentation available']
+  GF_MK_RE integer [note: 'Match with General Accounting statistics']
+  GF_NACE2_DB07 integer [note: 'NACE Company division following Dansk Branchekode 2007']
+  GF_NACE2_DB93 integer [note: 'NACE Company division following Dansk Branchekode 1993']
+  GF_NACE3_DB07 integer [note: 'NACE Company group following Dansk Branchekode 2007']
+  GF_NACE3_DB93 integer [note: 'NACE Company group following Dansk Branchekode 1993']
+  GF_NACE4_DB93 integer [note: 'NACE Company class following Dansk Branchekode 1993']
+  GF_NACE_DB07 integer [note: 'NACE Company class following Dansk Branchekode 2007']
+  GF_OMS integer [note: 'Revenue (kr.)']
+  GF_OPR_OMS integer [note: 'Not documentation available']
+  GF_RESDEL1_DB07 integer [note: 'Not documentation available']
+  GF_RESDEL1_DB93 integer [note: 'Not documentation available']
+  GF_RESDEL2_DB93 integer [note: 'Not documentation available']
+  GF_RESHOV1_DB07 integer [note: 'Not documentation available']
+  GF_RESHOV1_DB93 integer [note: 'Not documentation available']
+  GF_RESHOV2_DB93 integer [note: 'Not documentation available']
+  GF_RFEP integer [note: 'EBIT / Operational Profit (kr.)']
+  GF_VTV integer [note: 'Value Added (kr.)']
+  JKOD integer [note: 'Journal Code']
+  JUR_BEL_AMT_KODE_1970 integer [note: 'Not documentation available']
+  JUR_BEL_KOM_KODE integer [note: 'Company municipality Code']
+  JUR_BEL_KOM_KODE_1970 integer [note: 'Not documentation available']
+  JUR_BEL_LDEL_KODE integer [note: 'Country code in 2007']
+  JUR_BEL_REGION_KODE integer [note: 'Region code']
+  JUR_FRA_DATO timestamp [note: 'Company start date in the registry']
+  JUR_FUNKKODE integer [note: 'Code breakdown of workplaces into different public and private sectors']
+  JUR_HOVED_BRA_DB07 integer [note: 'Complete six-digit NACE classification code following Dansk Branchekode 2007']
+  JUR_HOVED_BRA_DB93 integer [note: 'Complete six-digit NACE classification code following Dansk Branchekode 1993']
+  JUR_TIL_DATO timestamp [note: 'Company end date in the registry']
+  JUR_VIRK_FORM integer [note: 'Code for business legal form']
+  R_TID timestamp [note: 'Update date']
+  VERSION integer [note: 'Not documentation available']
+
+  Note: 'General company statistics (1999-2016)'
+}
+
+Table frpe {
+  PNR integer [primary key, note: 'Personal ID']
+  CVRNR integer [note: 'Business ID']
+  PRODNR integer [note: 'Production Unit Number']
+  ANSID integer [note: 'Employment Identification']
+  AAR integer [note: 'Year']
+  AFLFORM varchar [note: 'Salary Form']
+  ALDER_LON integer [note: 'Person Age']
+  BARSELVAEGT float [note: 'Parental Leave Weight']
+  BRAARB varchar [note: 'Person Industry']
+  BRAFIR varchar [note: 'Legal Entity Industry Code']
+  DATOOPRET date [note: 'Creation Date of Full Data']
+  FRAVAARSAG varchar [note: 'Absence Cause']
+  FRAVPERIODE varchar [note: 'Absence Period']
+  FRAVTIMER float [note: 'Absence Hours']
+  FRAVVAEGT float [note: 'Absence Weight']
+  FRAV_FRADATO date [note: 'Absence Start Date']
+  FRAV_TILDATO date [note: 'Absence End Date']
+  FUNK varchar [note: 'Employee Job Function']
+  KALENDERDAGE integer [note: 'Calendar Days']
+  KOEN varchar [note: 'Gender']
+  KOMARB varchar [note: 'Workplace Municipality']
+  REFERENCETID varchar [note: 'Reference Time']
+  REFERENCTYPE varchar [note: 'Reference Type']
+  SEKTOR varchar [note: 'Sector']
+  VAEGT_ESR float [note: 'Business Register Weight']
+  VERSION integer [note: 'Version']
+
+  Note: 'Working absence and parental leave database (2010-2021)'
+}
+
+Table hust {
+  BOPIKOM varchar [primary key, note: 'Address Code']
+  KOM integer [note: 'Municipal code']
+  ANTBOERNH integer [note: 'Number of Children']
+  ANTPERSH integer [note: 'Number of People']
+  HUSTYPE varchar [note: 'Type of Household']
+
+  Note: 'Household database (1986-2016)'
+}
+
+Table idan {
+  PNR integer [primary key, note: 'Personal ID']
+  ARBGNR integer [note: 'Employer Number']
+  LBNR integer [note: 'Workplace Running Number']
+  ANSAAR integer [note: 'Year of Employment at Workplace']
+  ANSDAGE integer [note: 'Number of Days Employed']
+  ANSXFREM varchar [note: 'Employment Change to the Following Year']
+  ANSXTLB varchar [note: 'Employment Change from the Previous Year']
+  ARBLED float [note: 'Unemployed rate (Excl. Vacation)']
+  ARBSTK varchar [note: 'Workplace 4-digits Code']
+  JOBKAT varchar [note: 'Job Type']
+  JOBLON float [note: 'Salary in Employment Relationship']
+  LONMFREM float [note: 'Employed Year After']
+  LONMTILB float [note: 'Employed Year Before']
+  PERSBRC varchar [note: 'RAS Personal Industry']
+  STILL varchar [note: 'Job Position Code']
+  TILKNYT varchar [note: 'Connection to Primary Workplace']
+  TIMELON float [note: 'Hourly Wage']
+  TLONKVAL varchar [note: 'Quality of Hourly Wage Estimate']
+  TYPE varchar [note: 'Type of Employment Relationship']
+
+  Note: 'Employer-Employee Database (1998-2013)'
+}
+
+Table idap {
+  PNR integer [primary key, note: 'Personal ID']
+  AKASAF integer [note: 'Most Recent Year as a Member of an Unemployment Fund']
+  AKASST integer [note: 'Most Recent Start Year as a Member of an Unemployment Fund']
+  ALDERNOV integer [note: 'Age Calculated at the End of November']
+  ARLEDGR float [note: 'Unemployment Rate']
+  ATPAR integer [note: 'Number of Years as employee']
+  EJNOV integer [note: 'Number of Supplementary Non-November Employments']
+  EJNOVSUM float [note: 'Non-November Employment Salary Sum']
+  ERHVER float [note: "Work Experience in 'points'"]
+  ERHVER79 float [note: 'Work Experience until 1980']
+  KOEN varchar [note: 'Gender']
+  LONIND float [note: 'Total summed salary']
+  NSUP integer [note: 'Supplementary November Employments']
+  NSUPSUM float [note: 'Summed salary for Supplementary November Employments']
+  PSTILL varchar [note: 'Primary Job Position Code']
+  SSTILL varchar [note: 'Secondary Job Position']
+  SENAFAR integer [note: 'Most Recent Exit from the Labor Market']
+  SENSTAR integer [note: 'Most Recent Start in the Labor Market']
+  STARTAR integer [note: 'First Year in the Labor Market']
+
+  Note: 'Employee Database (1980-2013)'
+}
+
+
+
+
+Ref: poppers.PNR - bef.PNR
+Ref: fida.PNR > bef.PNR
+Ref: firm.CVRNR - fida.CVRNR
+Ref: frpe.PNR - fida.PNR
+Ref: frpe.CVRNR - fida.CVRNR
+Ref: hust.BOPIKOM - fam.BOPIKOM
+Ref: idan.PNR - bef.PNR
+Ref: idap.PNR - bef.PNR
