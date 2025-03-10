@@ -18,7 +18,7 @@ Table bef {
   FM_MARK integer [note: 'Cohabit Type']
   FOEDREG_KODE integer [note: 'Birth place']
   FOED_DAG timestamp [note: 'Birthdate']
-  GENERATION integer [note: "Parents' Origin Code"]
+  GENERATION integer [note: 'Inmigration generational number']
   HUSTYPE integer [note: 'Household Type']
   IE_TYPE integer [note: 'Origin Type']
   KOEN integer [note: 'Gender']
@@ -219,7 +219,207 @@ Table idap {
   Note: 'Employee Database (1980-2013)'
 }
 
+Table idas {
+  ARBGNR integer [primary key, note: 'Employer Number']
+  ARBGNRTI integer [note: 'Employer Number for Workplace Year After']
+  ARBGNRFR integer [note: 'Employer Number for Workplace Year Before']
+  LBNR integer [note: 'Workplace Running Number']
+  AARSVRK float [note: 'Number of Annual Work Units for All Employment Relationships']
+  ANDELOPS float [note: 'Percentage of Employees Who Resigned']
+  ANDELUDS float [note: 'Percentage of Employees Transferred to Another Workplace']
+  ANDFA float [note: 'Percentage of Employees at Basic Level (PSTILL=35) per Workplace']
+  ANDHF float [note: 'Percentage of Top Executives and Employees at the Highest Level (PSTILL=31-33) per Workplace']
+  ANDIF float [note: 'Percentage in Category "Other Employees" (PSTILL=36) per Workplace']
+  ANDELDF float [note: 'Percentage of Workers with Annual Unemployment']
+  ANDLF float [note: 'Percentage of Employees at the Intermediate Level (PSTILL=34) per Workplace']
+  ANTAAR integer [note: 'Number of Employment Relationships (People) in the Year']
+  ANTONOV integer [note: 'Number of Employees in November']
+  ARBSTK varchar [note: 'Workplace Code']
+  ARBSTKFR varchar [note: 'Workplace Code for the Previous Year']
+  ARBSTKTI varchar [note: 'Workplace Code for the Following Year']
+  BRANCHE1 varchar [note: 'Industry Code (DB93) for the Workplace']
+  EJERKO varchar [note: 'Ownership Code (Reformatted)']
+  ENDNDL varchar [note: 'Final Closure of the Workplace']
+  FILIAL integer [note: 'Number of Workplaces in the Company (Max 9)']
+  FRELFREM varchar [note: 'Internal/External Closure via Spinoff']
+  FRELTILB varchar [note: 'Internal/External Creation via Spinoff']
+  IDTILB varchar [note: 'Identity for Workplace Returned in Time']
+  KVANDFA float [note: 'Percentage of Women Among Employees at the Basic Level']
+  KVANDHF float [note: 'Percentage of Women Among Executives, Senior Managers, and Leading Professionals']
+  KVANDIF float [note: 'Percentage of Women in the "Other Employees" Category']
+  KVANDLF float [note: 'Percentage of Women at the Intermediate Level']
+  LBNRFREM integer [note: 'LBNR for Related Workplace Year After']
+  LBNRTILB integer [note: 'LBNR for Related Workplace Year Before']
+  LEDPERG float [note: 'Unemployment Periods Among Unemployed Workers on Average']
+  LGRGNSAR float [note: 'Annual Unemployment Salary']
+  LONAAR float [note: 'Annual Salary for All Employment Relationships']
+  LONGNSFA float [note: 'Average Hourly Wage for Primarily Employed Skilled Workers']
+  LONGNSHF float [note: 'Average Hourly Wage for Senior Functionaries']
+  LONGNSIF float [note: 'Average Hourly Wage for Intermediate-Level Primarily Employed Workers']
+  LONGNSLF float [note: 'Average Hourly Wage for Primarily Employed Employees at a Medium Level']
 
+  Note: 'IDA-Workplace Database (IDAS) (1980-2013)'
+}
+
+Table idfi {
+  ARBGNR integer [primary key, note: 'Company ID']
+  ANTALARB integer [note: 'Number of workplaces in the company']
+  ANTARBB integer [note: 'Previous number of retained workplaces']
+  FANSB integer [note: 'Total number of employees in company']
+  FANSH integer [note: 'Number of main employees in company']
+  SARBGNRX integer [note: 'Flag for change in largest workplace headcount (0/1)']
+  SIDTILB varchar [note: 'Identity status of largest workplace']
+  SLBNR integer [note: 'Serial number for largest workplace']
+  STORDB93 varchar [note: 'Industry code for largest workplace (1993-2002)']
+  STORDB03 varchar [note: 'Industry code for largest workplace (2003-2006)']
+  STORDB07 varchar [note: 'Industry code for largest workplace (2007-onwards)']
+  UOPLANSB integer [note: 'Secondary employees with undisclosed workplace']
+
+  Note: 'Company Level Database (1980-2013)'
+}
+
+Table iepe {
+  PNR integer [primary key, note: 'Personal ID']
+  MOR_ID integer [note: 'Mother ID']
+  FAR_ID integer [note: 'Father ID']
+  ALDER integer [note: 'Age']
+  CIVST integer [note: 'Civil status']
+  FOEDREG_KODE integer [note: 'Birth registration code']
+  GENERATION integer [note: 'Inmigration generational number']
+  IE_TYPE integer [note: 'Origin Type']
+  KOEN integer [note: 'Gender']
+  KOM integer [note: 'Community']
+  OPR_LAND integer [note: 'Origin Country']
+  STATFODF integer [note: 'Origin Country of father']
+  STATFODM integer [note: 'Origin Country of mother']
+  STATFOED integer [note: 'Origin Country of person']
+  STATSB integer [note: 'Origin Country of spouse']
+
+Note: Inmigration - Descendants Dataset (1980 - 2013)
+}
+
+Table ivnv {
+  CVRNR integer [primary key, note: 'Company ID']
+
+  Note: 'Newly established companies Database (2001-2013)'
+}
+
+Table ivpe {
+  CVRNR integer [primary key, note: 'Company ID']
+  PNR integer [primary key, note: 'Personal ID']
+
+  Note: 'Owner & Founder of new companies Database (2001-2013)'
+}
+
+Table ivps {
+  CVRNR integer [primary key, note: 'Company ID']
+  PNR integer [primary key, note: 'Personal ID']
+
+  Note: 'Founder of new companies Database (2001-2013)'
+}
+
+Table ind {
+  PNR integer [primary key, note: 'Personal ID']
+  AKTIEINDK float [note: 'Stock Income (kr.)']
+  ARBFORS float [note: 'Mandatory labor market contributions (kr.)']
+  ARBLHUMV float [note: 'Unemployment benefits and education allowances (kr.)']
+  BESKST varchar [note: 'Employment status']
+  BESKST13 varchar [note: 'Employment status (kr.) (2013 Definition)']
+  BRUTTO float [note: 'Gross Income (kr.)']
+  DISPON_13 float [note: 'Disposable Income (kr.) (2013 Definition)']
+  DISPON_NY float [note: 'Disposable Income (kr.)']
+  EJENDOMSVURDERING float [note: 'Property Assets (kr.)']
+  ERHVERVSINDK float [note: 'Business Income (kr.)']
+  ERHVERVSINDK_13 float [note: 'Business Income (kr.) (2013 Definition)']
+  ERHVERVSINDK_GL float [note: 'Business Income (kr.) (Old Definition)']
+  FORMREST_NY05 float [note: 'Net Wealth excluding pension (kr.) (2005 Definition)']
+  FORMUEINDK_BRUTTO float [note: 'Gross Capital Income (kr.)']
+  FORMUEINDK_NY float [note: 'Capital Income (kr.) (2013 Definition)']
+  FRADRAG float [note: 'Total Deductions (kr.)']
+  KOEJD float [note: 'Property Assets (kr.)']
+  LOENMV float [note: 'Total salary income (kr.)']
+  LOENMV_13 float [note: 'Total salary income (kr.) (2013 Definition)']
+  NETOVSKUD float [note: 'Net Profit (kr.)']
+  NETOVSKUD_13 float [note: 'Net Profit (kr.) (2013 Definition)']
+  NETOVSKUD_GL float [note: 'Net Profit (kr.) (Old Definition)']
+  OVSKEDJO2_NY float [note: 'Accommodation rental value (kr.)']
+  PERINDKIALT float [note: 'Total Personal Income (kr.)']
+  PERINDKIALT_13 float [note: 'Total Personal Income (kr.) (2013 Definition)']
+  PEROEVRIGFORMUE float [note: 'Rental Income (kr.) (2013 Definition)']
+  PEROEVRIGFORMUE_13 float [note: 'Rental Income (kr.)']
+  PERSAMLINKRENT_NY float [note: 'Total Personal Income with Net interest (kr.)']
+  PERSONINDK float [note: 'Total Personal income without Capital income (kr.)']
+  QAKTIVF_NY05 float [note: 'Total Assets (kr.) (2005 Definition)']
+  QIVARK varchar [note: 'Tax on Capital Income (kr.)']
+  QPASSIVN float [note: 'Liabilities to the state (kr.)']
+  QSPLINDK float [note: 'Taxable Income (kr.)']
+  RENTEINDK float [note: 'Total taxable interest income from Denmark (kr.)']
+  SAMLINK_NY float [note: 'Total Personal Income (kr.)']
+  SKATMVIALT_13 float [note: 'Taxes (kr.) (2013 Definition)']
+  SKATMVIALT_NY float [note: 'Taxes (kr.)']
+  SKATTOT_NY float [note: 'Total Tax (kr.)']
+  VIRKORDIND varchar [note: 'Business scheme Income (kr.)']
+
+  Note: 'Personal Income Database (1980-2017)'
+}
+
+
+Table indh {
+  PNR integer [primary key, note: 'Personal ID']
+  AKTIEINDK float [note: 'Stock Income (kr.)']
+  ARBFORS float [note: 'Mandatory labor market contributions (kr.)']
+  ARBLHUMV float [note: 'Unemployment benefits and education allowances (kr.)']
+  BESKST varchar [note: 'Employment status']
+  BRUTTO float [note: 'Gross Income (kr.)']
+  DISCOALLE_INDK varchar [note: 'Professional Classification for Employment']
+  DISPON_NY float [note: 'Disposable Income (kr.)']
+  EJENDOMSVURDERING float [note: 'Property Assets (kr.)']
+  ERHVERVSINDK float [note: 'Business Income (kr.)']
+  ERHVERVSINDK_GL float [note: 'Business Income (kr.) (Old Definition)']
+  FODTIDATO date [note: 'Date of Birth']
+  FORMREST_NY05 float [note: 'Net Wealth excluding pension (kr.) (2005 Definition)']
+  FORMUEINDK_NY float [note: 'Capital Income (kr.) (2013 Definition)']
+  FRADRAG float [note: 'Total Deductions (kr.)']
+  KOEJD float [note: 'Property Assets (kr.)']
+  KON varchar [note: 'Gender']
+  LOENMV float [note: 'Total salary income (kr.)']
+  NACE varchar [note: 'Workplace Industry']
+  NETOVSKUD float [note: 'Net Profit (kr.)']
+  NETOVSKUD_GL float [note: 'Net Profit (kr.) (Old Definition)']
+  OVSKEDJO2_NY float [note: 'Accommodation rental value (kr.)']
+  PERSAMLINKRENT_NY float [note: 'Total Personal Income (kr.)']
+  PERSONINDK float [note: 'Total Personal income without Capital income (kr.)']
+  QAKTIVF_NY05 float [note: 'Total Assets (kr.) (2005 Definition)']
+  QIVARK varchar [note: 'Tax on Capital Income (kr.)']
+  QPASSIVN float [note: 'Liabilities to the state (kr.)']
+  QSPLINDK float [note: 'Taxable Income (kr.)']
+  RENTEINDK float [note: 'Total taxable interest income from Denmark (kr.)']
+  SAMLINK_NY float [note: 'Total Personal Income (kr.)']
+  SKATMVIALT_NY float [note: 'Taxes (kr.)']
+  SKATTOT_NY float [note: 'Total Tax (kr.)']
+  SOCIO varchar [note: 'Socioeconomic Classification from 1994 to 2001']
+  VIRKORDIND varchar [note: 'Business scheme Income (kr.)']
+
+  Note: Personal Income Database (1980-2012)
+}
+
+Table nbpt {
+  BOPIKOM integer [note: 'Address Code']
+  BOPIKOM_GL integer [note: 'Previous Address Code']
+  KOM integer [note: 'Community']
+  KOM_GL KOM integer [note: 'Previous Community']
+
+  Note: Residential Old-New Link Database (2011)
+}
+
+Table nogt {
+  OPGIKOM integer [note: 'Address Code (Opgang project)']
+  OPGIKOM_GL integer [note: 'Previous Address Code (Opgang project)']
+  KOM integer [note: 'Community']
+  KOM_GL KOM integer [note: 'Previous Community']
+
+  Note: Opgang Residential Old-New Link Database (2011)
+}
 
 
 Ref: poppers.PNR - bef.PNR
@@ -230,3 +430,15 @@ Ref: frpe.CVRNR - fida.CVRNR
 Ref: hust.BOPIKOM - fam.BOPIKOM
 Ref: idan.PNR - bef.PNR
 Ref: idap.PNR - bef.PNR
+Ref: idas.ARBGNR - idan.ARBGNR
+Ref: idfi.ARBGNR - idan.ARBGNR
+Ref: iepe.PNR - bef.PNR
+Ref: ivnv.CVRNR - firm.CVRNR
+Ref: ivpe.CVRNR - ivnv.CVRNR
+Ref: ivpe.PNR - bef.PNR
+Ref: ivps.CVRNR - ivnv.CVRNR
+Ref: ivps.PNR - bef.PNR
+Ref: ind.PNR - bef.PNR
+Ref: indh.PNR - ind.PNR
+Ref: nbpt.BOPIKOM - hust.BOPIKOM
+Ref: nogt.OPGIKOM - bef.BOPIKOM
