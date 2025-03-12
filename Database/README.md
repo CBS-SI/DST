@@ -1,17 +1,16 @@
-# CBS DST Data Catalog
+# SI DST Data Catalog
 
-## Databases
+## Database Catalogue
 
-TBD
+[TO BE DONE]
 
-https://dbdiagram.io/d
+## Variable Catalogue
 
-## Variable List
+### Tools
 
-Variable Searching tool: https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable
+- Variable Searching tool: https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable
+- Registry list: https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html
 
-List of Registry:
-https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html
 
 ### `PNR` / DB: [`bef`, `poppers`,`fida`,`idan` ,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`]
 
