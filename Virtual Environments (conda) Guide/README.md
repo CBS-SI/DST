@@ -1,4 +1,4 @@
-## Create Python virtual environments with conda
+## 1. Create Python virtual environments with conda
 
 Please _do not use python "base" environment_ for installing your dependencies, your packages can be easily create conflicts with the packages installed by other researchers.
 
@@ -12,13 +12,13 @@ Please use a meaningful name (e.g. `pipeg_env` for Pipe Galera test environment)
 
 Your environment gets saved at your project folder: `F:Data\Workdata\{project id}\anaconda\envs\{your env}`
 
-## Install what you need
+## 2. Install what you need
 
 Activate your environment `conda activate pipeg_env` and pip install what you need (e.g. `pip install pandas`)
 
 You will notice that the package comes from a DST private channel called "srcnexus"
 
-## Tidy up environment
+## 3. Tidy up environment
 
 Please do not keep a collection of environments (e.g. `pipeg_env`, `test`) for the same project goal. Check the current environments `conda env list` and delete your own environments that are not using (e.g. `conda remove -n test --all`).
 
