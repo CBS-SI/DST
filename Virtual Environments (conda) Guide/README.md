@@ -18,7 +18,7 @@ Activate your environment `conda activate pipeg_test` and pip install what you n
 
 You will notice that the package comes from a DST private channel called "srcnexus"
 
-## Tidy ups environment
+## Tidy up environment
 
 Please do not keep a collection of environments (e.g. `pipeg_test`, `test`) for the same goal. Check the current environments `conda env list` and delete your own environments that are not using (e.g. `conda remove -n test --all`).
 
