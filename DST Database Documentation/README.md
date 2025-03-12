@@ -1,5 +1,7 @@
 # SI DST Data Catalog
 
+[WORK IN PROGRESS]
+
 ## Database Catalogue
 
 [TO BE DONE]
@@ -10,7 +12,6 @@
 
 - Variable Searching tool: https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable
 - Registry list: https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html
-
 
 ### `PNR` / DB: [`bef`, `poppers`,`fida`,`idan` ,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`]
 
@@ -1528,7 +1529,7 @@ https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/alder-lon
 
 Reason for work absence.
 
-- '1100' = cc (inclydung pregnancy-related illness)
+- '1100' = Common disease (inclydung pregnancy-related illness)
 - '1200' = Child's disease
 - '1300' = Work accident
 - '1400' = Maternity and Adoption Leave
@@ -2324,9 +2325,3 @@ Please check `PERINDKIALT_13` from Database `ind` instead.
 Please check `STILL` from Database `idan` instead.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personers-tilknytning-til-arbejdsmarkedet-set-over-hele-aaret--akm-/socio
-
-### `OPGIKOM` / DB: [`nogt`]
-
-### `OPGIKOM_GL` / DB: [`nogt`]
-
-### `KOM_GL` / DB: [`nogt`]

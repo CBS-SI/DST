@@ -295,7 +295,7 @@ Table iepe {
   STATFOED integer [note: 'Origin Country of person']
   STATSB integer [note: 'Origin Country of spouse']
 
-Note: Inmigration - Descendants Dataset (1980 - 2013)
+Note: 'Inmigration - Descendants Dataset (1980 - 2013)'
 }
 
 Table ivnv {
@@ -400,25 +400,25 @@ Table indh {
   SOCIO varchar [note: 'Socioeconomic Classification from 1994 to 2001']
   VIRKORDIND varchar [note: 'Business scheme Income (kr.)']
 
-  Note: Personal Income Database (1980-2012)
+  Note: 'Personal Income Database (1980-2012)'
 }
 
 Table nbpt {
   BOPIKOM integer [note: 'Address Code']
   BOPIKOM_GL integer [note: 'Previous Address Code']
   KOM integer [note: 'Community']
-  KOM_GL KOM integer [note: 'Previous Community']
+  KOM_GL integer [note: 'Previous Community']
 
-  Note: Residential Old-New Link Database (2011)
+  Note: 'Residential Old-New Link Database (2011)'
 }
 
 Table nogt {
   OPGIKOM integer [note: 'Address Code (Opgang project)']
   OPGIKOM_GL integer [note: 'Previous Address Code (Opgang project)']
   KOM integer [note: 'Community']
-  KOM_GL KOM integer [note: 'Previous Community']
+  KOM_GL integer [note: 'Previous Community']
 
-  Note: Opgang Residential Old-New Link Database (2011)
+  Note: 'Opgang Residential Old-New Link Database (2011)'
 }
 
 
