@@ -13,7 +13,7 @@
 - Variable Searching tool: https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable
 - Registry list: https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html
 
-### `PNR` / DB: [`bef`, `poppers`,`fida`,`idan` ,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`]
+### `PNR` / DB: [`bef`, `poppers`,`fida`,`idan` ,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`, `ophgin`]
 
 Unique identification of person is used as key to `PERSON_ID`.
 
@@ -238,7 +238,7 @@ Region of Denmark.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/reg
 
-### `STATSB` / DB: [`bef`, `iepe`]
+### `STATSB` / DB: [`bef`, `iepe`, `ophgin`]
 
 Citizenship / Country of origin of the person.
 
@@ -382,7 +382,7 @@ The proportion of a full academic year to which the course corresponds. Decimal 
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/AKOMFANG
 
-### `CPRTJEK`
+### `CPRTJEK` / DB: [`ophgin`]
 
 CPR check. Control value calculated on a social security number from a given date.
 
@@ -397,7 +397,7 @@ CPR check. Control value calculated on a social security number from a given dat
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cprtjek
 
-### `CPRTYPE`
+### `CPRTYPE` / DB: [`ophgin`]
 
 CPR type.
 
@@ -427,7 +427,7 @@ Code for an education understood as the educational program or activity. All edu
 
 https://www.dst.dk/da/statistik/dokumentation/times/uddannelseregister/udd
 
-### `VERSION` / DB: [`firm`, `frpe`]
+### `VERSION` / DB: [`firm`, `frpe`, `ophgin`]
 
 Time reference. The first time data is loaded is `VERSION = 01` for a given REFERENCE TIME, the second time `VERSION = 02`, etc.
 
@@ -770,7 +770,7 @@ Starting time of ongoing education.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/IG-VFRA
 
-### `FORKLAR`
+### `FORKLAR` / DB: [`ophgin`]
 
 Code for residence permit type from the Immigration Service.
 
@@ -778,7 +778,7 @@ Check the documentation for the specific categorical encodings:
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD
 
-### `GRUNDLAG`
+### `GRUNDLAG` / DB: [`ophgin`]
 
 Code of the subdivision of residence permit type from the Immigration Service.
 
@@ -786,7 +786,7 @@ Check the documentation for the specific categorical encodings:
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/grundlag
 
-### `IMPUTERET`
+### `IMPUTERET` / DB: [`ophgin`]
 
 Code for imputation status of the person's residence permit. After a process, residence permit are `IMPUTED` (e.g 1, 20, 99) for immigrant persons who do not have Danish / Nordic citizenship and who are born abroad.
 
@@ -809,7 +809,7 @@ Date
 
 [NO DOCUMENTATION AVAILABLE]
 
-### `KATEGORI`
+### `KATEGORI` / DB: [`ophgin`]
 
 Code for residence permit type from the Immigration Service.
 
@@ -829,7 +829,7 @@ Code for residence permit type from the Immigration Service.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/kategori
 
-### `TILLADELSESDATO`
+### `TILLADELSESDATO` / DB: [`ophgin`]
 
 Date of residence permit.
 
