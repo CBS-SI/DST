@@ -13,7 +13,7 @@
 - Variable Searching tool: https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable
 - Registry list: https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html
 
-### `PNR` / DB: [`bef`, `poppers`,`fida`,`idan` ,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`, `ophgin`]
+### `PNR` / DB: [`bef`, `poppers`,`fida`,`idan` ,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`, `ophgin`, `veuv`, `udda`]
 
 Unique identification of person is used as key to `PERSON_ID`.
 
@@ -360,7 +360,7 @@ Opgang housing project. Previous address in the municipality (road no., House no
 
 https://www.dst.dk/extranet/ForskningVariabellister/NOGT%20-%20N%C3%B8gle%20opgangsadresse%20tilbage%20i%20tid%20(ny%20til%20gl).html
 
-### `AFSLUTN`
+### `AFSLUTN` / DB: [`veuv`]
 
 Course end. Specifies the way the course is completed for each student, ie. whether the student has, for example, completed or interrupted the course.
 
@@ -376,13 +376,13 @@ Course end. Specifies the way the course is completed for each student, ie. whet
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/AFSLUTN
 
-### `AKOMFANG`
+### `AKOMFANG` / DB: [`veuv`]
 
 The proportion of a full academic year to which the course corresponds. Decimal fraction of 1 year of 5 digits where the comma is implied. The proposed 0 must not be suppressed. A full-time course is thus indicated by the value `10000`, while a half-time course is indicated by the value `05000`.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/AKOMFANG
 
-### `CPRTJEK` / DB: [`ophgin`]
+### `CPRTJEK` / DB: [`ophgin`, `veuv`, `udda`]
 
 CPR check. Control value calculated on a social security number from a given date.
 
@@ -397,7 +397,7 @@ CPR check. Control value calculated on a social security number from a given dat
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cprtjek
 
-### `CPRTYPE` / DB: [`ophgin`]
+### `CPRTYPE` / DB: [`ophgin`, `veuv`, `udda`]
 
 CPR type.
 
@@ -409,25 +409,25 @@ CPR type.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cprtype
 
-### `KURSIST_VFRA`
+### `KURSIST_VFRA` / DB: [`veuv`]
 
 Start date of the course.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/KURSIST-VFRA
 
-### `KURSIST_VTIL`
+### `KURSIST_VTIL` / DB: [`veuv`]
 
 End date of the course.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/KURSIST-VTIL
 
-### `UDD`
+### `UDD` / DB: [`veuv`, `udda`]
 
 Code for an education understood as the educational program or activity. All educational programs have a UDD code (eg: Nurse = 5166, Engineer = 5189)
 
 https://www.dst.dk/da/statistik/dokumentation/times/uddannelseregister/udd
 
-### `VERSION` / DB: [`firm`, `frpe`, `ophgin`]
+### `VERSION` / DB: [`firm`, `frpe`, `ophgin`, `udda`]
 
 Time reference. The first time data is loaded is `VERSION = 01` for a given REFERENCE TIME, the second time `VERSION = 02`, etc.
 
@@ -706,7 +706,7 @@ The variable must be seen in the context of the variable `FANSB` (Number of empl
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/UOPLANSB
 
-### `ALMAUDD`
+### `ALMAUDD` / DB: [`udda`]
 
 Code for highest completed _general_ education.
 
@@ -714,13 +714,13 @@ Check the documentation for the specific categorical encodings:
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ALMAUDD
 
-### `ALM_VFRA`
+### `ALM_VFRA` / DB: [`udda`]
 
 Time of highest completed general education.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ALM-VFRA
 
-### `ERHAUDD`
+### `ERHAUDD` / DB: [`udda`]
 
 Highest completed _vocational_ qualifying education.
 
@@ -728,7 +728,7 @@ Check the documentation for the specific categorical encodings:
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERHAUDD
 
-### `ERHINSTNR`
+### `ERHINSTNR` / DB: [`udda`]
 
 Institutional number of the institution where the highest completed vocational qualifying education has been completed.
 
@@ -736,13 +736,13 @@ Check the documentation for the specific categorical encodings:
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERHINSTNR
 
-### `ERH_VFRA`
+### `ERH_VFRA` / DB: [`udda`]
 
 Time of obtaining vocational competency-providing education
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERH-VFRA
 
-### `HFAUDD`
+### `HFAUDD` / DB: [`udda`]
 
 Code for a person's highest completed education at any given time.
 
@@ -750,7 +750,7 @@ Check the documentation for the specific categorical encodings:
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD
 
-### `HFINSTNR`
+### `HFINSTNR` / DB: [`udda`]
 
 Code for the name of the institution where the highest completed education is completed.
 
@@ -758,13 +758,13 @@ Check the documentation for the specific categorical encodings:
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD
 
-### `HF_VFRA`
+### `HF_VFRA` / DB: [`udda`]
 
 Time of highest completed education.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HF-VFRA
 
-### `IG_VFRA`
+### `IG_VFRA` / DB: [`udda`]
 
 Starting time of ongoing education.
 
