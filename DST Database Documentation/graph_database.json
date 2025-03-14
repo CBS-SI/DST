@@ -220,62 +220,64 @@ Table idap {
 }
 
 Table idas {
-  ARBGNR integer [primary key, note: 'Employer Number']
-  ARBGNRTI integer [note: 'Employer Number for Workplace Year After']
-  ARBGNRFR integer [note: 'Employer Number for Workplace Year Before']
-  LBNR integer [note: 'Workplace Running Number']
-  AARSVRK float [note: 'Number of Annual Work Units for All Employment Relationships']
-  ANDELOPS float [note: 'Percentage of Employees Who Resigned']
-  ANDELUDS float [note: 'Percentage of Employees Transferred to Another Workplace']
-  ANDFA float [note: 'Percentage of Employees at Basic Level (PSTILL=35) per Workplace']
-  ANDHF float [note: 'Percentage of Top Executives and Employees at the Highest Level (PSTILL=31-33) per Workplace']
-  ANDIF float [note: 'Percentage in Category "Other Employees" (PSTILL=36) per Workplace']
-  ANDELDF float [note: 'Percentage of Workers with Annual Unemployment']
-  ANDLF float [note: 'Percentage of Employees at the Intermediate Level (PSTILL=34) per Workplace']
-  ANTAAR integer [note: 'Number of Employment Relationships (People) in the Year']
-  ANTONOV integer [note: 'Number of Employees in November']
+  ARBGNR integer [primary key, note: 'Workplace ID']
+  ARBGNRTI integer [note: 'Workplace ID - To']
+  ARBGNRFR integer [note: 'Workplace ID - From']
+  LBNR integer [note: 'Workplace Running ID']
+  AARSVRK float [note: 'Number of Employees (FTEs)']
+  ANDELOPS float [note: 'Percentage of Employees remaining after Workplace ID closed']
+  ANDELUDS float [note: 'Percentage of Employees transferred to another Workplace']
+  ANDFA float [note: 'Percentage of Skilled Employees']
+  ANDHF float [note: 'Percentage of Top Executives and Employees at the Highest Level']
+  ANDIF float [note: 'Percentage of Non-Skilled Employees']
+  ANDLEDAR float [note: 'Percentage of Unemployed Employees generated']
+  ANDLF float [note: 'Percentage of Mid-level Employees']
+  ANTAAR integer [note: 'Number of Employees']
+  ANTONOV integer [note: 'Number of November-Employees']
   ARBSTK varchar [note: 'Workplace Code']
   ARBSTKFR varchar [note: 'Workplace Code for the Previous Year']
   ARBSTKTI varchar [note: 'Workplace Code for the Following Year']
-  BRANCHE1 varchar [note: 'Industry Code (DB93) for the Workplace']
-  EJERKO varchar [note: 'Ownership Code (Reformatted)']
+  BRANCHE1 varchar [note: 'NACE Industry Code (DB93) for the Workplace']
+  EJERKO varchar [note: 'Ownership Type']
   ENDNDL varchar [note: 'Final Closure of the Workplace']
-  FILIAL integer [note: 'Number of Workplaces in the Company (Max 9)']
-  FRELFREM varchar [note: 'Internal/External Closure via Spinoff']
-  FRELTILB varchar [note: 'Internal/External Creation via Spinoff']
-  IDTILB varchar [note: 'Identity for Workplace Returned in Time']
-  KVANDFA float [note: 'Percentage of Women Among Employees at the Basic Level']
-  KVANDHF float [note: 'Percentage of Women Among Executives, Senior Managers, and Leading Professionals']
-  KVANDIF float [note: 'Percentage of Women in the "Other Employees" Category']
-  KVANDLF float [note: 'Percentage of Women at the Intermediate Level']
-  LBNRFREM integer [note: 'LBNR for Related Workplace Year After']
-  LBNRTILB integer [note: 'LBNR for Related Workplace Year Before']
-  LEDPERG float [note: 'Unemployment Periods Among Unemployed Workers on Average']
-  LGRGNSAR float [note: 'Annual Unemployment Salary']
-  LONAAR float [note: 'Annual Salary for All Employment Relationships']
-  LONGNSFA float [note: 'Average Hourly Wage for Primarily Employed Skilled Workers']
-  LONGNSHF float [note: 'Average Hourly Wage for Senior Functionaries']
-  LONGNSIF float [note: 'Average Hourly Wage for Intermediate-Level Primarily Employed Workers']
-  LONGNSLF float [note: 'Average Hourly Wage for Primarily Employed Employees at a Medium Level']
+  FILIAL integer [note: 'Branch/Subsidiary Indicator']
+  FRELFREM varchar [note: 'Closure via Spinoff']
+  FRELTILB varchar [note: 'Creation via Spinoff']
+  IDTILB varchar [note: 'Identity change indicator']
+  KVANDFA float [note: 'Percentage of Skilled Women Employees']
+  KVANDHF float [note: 'Percentage of Top Women Executives and Employees at the Highest Level']
+  KVANDIF float [note: 'Percentage of Non-Skilled Women Employees']
+  KVANDLF float [note: 'Percentage of Mid-level Women Employees']
+  LBNRFREM integer [note: 'LBNR Year After']
+  LBNRTILB integer [note: 'LBNR Year Before']
+  LEDPERG float [note: 'Unemployment Periods generated']
+  LGRGNSAR float [note: 'Average annual unemployment rate']
+  LONAAR float [note: 'Sum of Salaries for all employees']
+  LONGNS float [note: 'Average hourly salary for all main employees']
+  LONGNSFA float [note: 'Average hourly salary for Skilled Workers in the Workplace']
+  LONGNSHF float [note: 'Average hourly salary for the Highest level in the Workplace']
+  LONGNSIF float [note: 'Average hourly salary for Non-Skilled Workers in the Workplace']
+  LONGNSLF float [note: 'Average hourly salary for Mid-level orkers in the Workplace']
 
-  Note: 'IDA-Workplace Database (IDAS) (1980-2013)'
+  Note: 'IDA-Workplace Database (IDAS) (1980-2022)'
 }
 
 Table idfi {
-  ARBGNR integer [primary key, note: 'Company ID']
+  ARBGNR integer [primary key, note: 'Workplace ID']
+  CVRNR integer [note: 'Company ID']
   ANTALARB integer [note: 'Number of workplaces in the company']
-  ANTARBB integer [note: 'Previous number of retained workplaces']
+  ANTARBB integer [note: 'Number of retained workplaces']
   FANSB integer [note: 'Total number of employees in company']
-  FANSH integer [note: 'Number of main employees in company']
+  FANSH integer [note: 'Number of employees in company']
   SARBGNRX integer [note: 'Flag for change in largest workplace headcount (0/1)']
   SIDTILB varchar [note: 'Identity status of largest workplace']
-  SLBNR integer [note: 'Serial number for largest workplace']
-  STORDB93 varchar [note: 'Industry code for largest workplace (1993-2002)']
-  STORDB03 varchar [note: 'Industry code for largest workplace (2003-2006)']
-  STORDB07 varchar [note: 'Industry code for largest workplace (2007-onwards)']
+  SLBNR integer [note: 'Largest workplace ID']
+  STORDB93 varchar [note: 'NACE 6-digits industry code (DB93)']
+  STORDB03 varchar [note: 'NACE 6-digits industry code (DB03)']
+  STORDB07 varchar [note: 'NACE 6-digits industry code (DB07)']
   UOPLANSB integer [note: 'Secondary employees with undisclosed workplace']
 
-  Note: 'Company Level Database (1980-2013)'
+  Note: 'Workplace Level Database (1980-2013)'
 }
 
 Table iepe {
@@ -295,13 +297,13 @@ Table iepe {
   STATFOED integer [note: 'Origin Country of person']
   STATSB integer [note: 'Origin Country of spouse']
 
-Note: 'Inmigration - Descendants Dataset (1980 - 2013)'
+Note: 'Inmigration - Descendants Dataset (1980 - Present)'
 }
 
 Table ivnv {
   CVRNR integer [primary key, note: 'Company ID']
 
-  Note: 'Newly established companies Database (2001-2013)'
+  Note: 'Newly established companies Database (2001-2022)'
 }
 
 Table ivpe {
@@ -315,7 +317,7 @@ Table ivps {
   CVRNR integer [primary key, note: 'Company ID']
   PNR integer [primary key, note: 'Personal ID']
 
-  Note: 'Founder of new companies Database (2001-2013)'
+  Note: 'Founder of new companies Database (2001-2022)'
 }
 
 Table ind {
@@ -360,7 +362,7 @@ Table ind {
   SKATTOT_NY float [note: 'Total Tax (kr.)']
   VIRKORDIND varchar [note: 'Business scheme Income (kr.)']
 
-  Note: 'Personal Income Database (1980-2017)'
+  Note: 'Personal Income Database (1980-Present)'
 }
 
 
@@ -421,24 +423,18 @@ Table nogt {
   Note: 'Opgang Residential Old-New Link Database (2011)'
 }
 
+Table udda {
+    PNR integer [primary key, note: 'Personal ID']
+    ALMAUDD integer [note: 'Highest General Education']
+    ALM_VFRA date [note: 'Highest General Education time of completion']
+    ERHAUDD integer [note: 'Highest Vocational Education']
+    ERHINSTNR integer [note: 'Highest Vocational Education Institution']
+    ERH_VFRA date [note: 'Highest Vocational Education time of completion']
+    HFAUDD integer [note: 'Highest Education']
+    HFINSTNR integer [note: 'Highest Education Institution']
+    HF_VFRA date [note: 'Highest Education time of completion']
+    IG_VFRA date [note: 'Starting time of ongoing education']
+    UDD integer [note: 'Education type']
 
-Ref: poppers.PNR - bef.PNR
-Ref: fida.PNR > bef.PNR
-Ref: firm.CVRNR - fida.CVRNR
-Ref: frpe.PNR - fida.PNR
-Ref: frpe.CVRNR - fida.CVRNR
-Ref: hust.BOPIKOM - fam.BOPIKOM
-Ref: idan.PNR - bef.PNR
-Ref: idap.PNR - bef.PNR
-Ref: idas.ARBGNR - idan.ARBGNR
-Ref: idfi.ARBGNR - idan.ARBGNR
-Ref: iepe.PNR - bef.PNR
-Ref: ivnv.CVRNR - firm.CVRNR
-Ref: ivpe.CVRNR - ivnv.CVRNR
-Ref: ivpe.PNR - bef.PNR
-Ref: ivps.CVRNR - ivnv.CVRNR
-Ref: ivps.PNR - bef.PNR
-Ref: ind.PNR - bef.PNR
-Ref: indh.PNR - ind.PNR
-Ref: nbpt.BOPIKOM - hust.BOPIKOM
-Ref: nogt.OPGIKOM - bef.BOPIKOM
+    Note: 'Education Database (1981 - Present)'
+}
