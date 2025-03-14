@@ -639,7 +639,7 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### `ANTARBB` / DB: [`idfi`]
 
-Previous number of retained workplaces in the company between the current year and the year before.
+Number of retained workplaces in the company between the current year and the year before.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/ANTARBB
 
@@ -756,7 +756,7 @@ Code for the name of the institution where the highest completed education is co
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD
+https://www.dst.dk/da/Statistik/dokumentation/Times/uddannelsesdata/hoejest-fuldfoerte-uddannelse---status/hfinstnr
 
 ### `HF_VFRA` / DB: [`udda`]
 
@@ -1702,15 +1702,13 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### ANDELOPS / DB: [`idas`]
 
-Share of Dissolution
-
-Represents the proportion of a workplace that was dissolved in cases of split-ups or reorganizations.
+Percentage of employees (in integers) that remained from a closed Workplace ID to a the new Workplace ID after a merge or disolution.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andelops
 
 ### ANDELUDS / DB: [`idas`]
 
-Share of Split-off
+Percentage of employees (in integers) that were transfered from a closed Workplace ID to a different Workplace after a merge or disolution.
 
 Indicates the proportion of a workplace that was split off to form new units
 
@@ -1718,25 +1716,26 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### ANDFA / DB: [`idas`]
 
-Share of Skilled Workers
+Percentage of Skilled Workers in the Workplace.
 
-Represents the proportion of skilled workers in the workplace's workforce.
+Represents the proportion of "Basic" workers (`PTILL` = 35).The "basic" comes from `SOCIO` - used to be "skilled".
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andfa
 
 ### ANDHF / DB: [`idas`]
 
-Share of Workers with Higher Education
+Percentage of Workers at the Highest level in the Workplace.
 
-Represents the proportion of employees with higher education qualifications.
+Represents the proportion of "top executives and employees at the highest level (PSTILL=31-33).
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andhf
 
 ### ANDIF / DB: [`idas`]
 
-Share of Workers with Intermediate Education
+Percentage of Non-Skilled Workers in the Workplace.
 
-Represents the proportion of employees with intermediate level education.
+Represents the proportion of "Other employee" workers (`PTILL` = 36).The "Other employee" comes from `SOCIO` - used to be "non-skilled worker".
+
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andif
 
 ### ANDELDF / DB: [`idas`]
@@ -1747,17 +1746,17 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### ANDLF / DB: [`idas`]
 
-Share of Unskilled Workers
+Percentage of "Mid-level" Workers in the Workplace.
 
-Represents the proportion of unskilled workers in the workplace's workforce.
+Represents the proportion of "Mid-level or intermediate" workers (`PTILL` = 34).The "Intermediate" comes from `SOCIO` - used to be "non-skilled worker".
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andlf
 
 ### ANTAAR / DB: [`idas`]
 
-Number of Years
+Number of Employees.
 
-Indicates the number of years the workplace has existed in the statistics.
+This variable is similar to `AARSVRK`. The difference `ANTAAR` counts the number of people (number of heads) who have been employed at the relevant workplace, whereas `AARSVRK` converts the employment to full-time employees (FTEs) at the workplace.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/antaar
 
