@@ -286,13 +286,13 @@ https://www.dst.dk/da/Statistik/dokumentation/Times/forebyggelsesregistret/plads
 
 Oldest child age in `E_FAMILIE` (see `E_FAMILIE`)
 
-No documentation available.
+[NO DOCUMENTATION AVAILABLE]
 
 ### `ALDYNGST` / DB: [`fam`]
 
 Youngest child age in `E_FAMILIE` (see `E_FAMILIE`)
 
-No documentation available.
+[NO DOCUMENTATION AVAILABLE]
 
 ### `ANTBOERNF` / DB: [`fam`]
 
@@ -493,7 +493,9 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### `JOBLON` / DB: [`idan`]
 
-Salary linked to particular employment. Wages in the individual employment relationship for both main and secondary employees.
+Salary linked to particular employment.
+
+Wages in the individual employment relationship for both main and secondary employees.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenforhold-der-vedroerer-ida-ansaettelser-/joblon
 
@@ -1027,21 +1029,27 @@ https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-ba
 
 ### `GF_BD_LS` / DB: [`firm`]
 
+Markering for branchedækning for lønsumsindbetaling. (?)
+
 [TO BE DONE]
 
-No documentation available. Markering for branchedækning for lønsumsindbetaling.
+[NO DOCUMENTATION AVAILABLE]
 
 ### `GF_BD_MO` / DB: [`firm`]
 
+Markering for branchedækning vedr. momsbetaling (?)
+
 [TO BE DONE]
 
-No documentation available. Markering for branchedækning vedr. momsbetaling .
+[NO DOCUMENTATION AVAILABLE]
 
 ### `GF_BD_RE` / DB: [`firm`]
 
+Markering for branchedækning i Generel Regnskabsstatistik (?)
+
 [TO BE DONE]
 
-No documentation available. Markering for branchedækning i Generel Regnskabsstatistik
+[NO DOCUMENTATION AVAILABLE]
 
 ### `GF_BG_METODE` / DB: [`firm`]
 
@@ -1354,7 +1362,7 @@ Country code in 2007
 
 [TO BE DONE]
 
-No documentation available.
+[NO DOCUMENTATION AVAILABLE]
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/jur-bel-ldel-kode
 
@@ -1477,7 +1485,7 @@ Update date.
 
 [NO DOCUMENTATION AVAILABLE]
 
-I guess it's the date of when the data was uploaded/refreshed. No documentation available.
+I guess it's the date of when the data was uploaded/refreshed.
 
 ## `PRODNR` / DB: [`frpe`]
 
@@ -1738,11 +1746,13 @@ Represents the proportion of "Other employee" workers (`PTILL` = 36).The "Other 
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andif
 
-### ANDELDF / DB: [`idas`]
+### ANDLEDAR / DB: [`idas`]
 
-[TO BE DONE]
+Percentage of Unemployed Employees generated
 
-[NO DOCUMENTATION AVAILABLE]
+Represents the number of employees who has been employed at the workplace the year before and been unemployed in the year of the registry.
+
+https://www.dst.dk/da/Statistik/dokumentation/Times/ida-databasen/ida-arbejdssteder/andledar
 
 ### ANDLF / DB: [`idas`]
 
@@ -1762,13 +1772,15 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### ANTONOV / DB: [`idas`]
 
-[TO BE DONE]
+Number of November-employees.
 
-[NO DOCUMENTATION AVAILABLE]
+Basically, an end of the year headcount. All November-related jobs at the workplace, whether the job is the primary, secondary, tertiary, etc. Jobs consist of employment relationships where you usually work the equivalent of 1 hour a week at the reference time at the end of November.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/antnov
 
 ### ARBSTK / DB: [`idas`]
 
-Workplace Status Code
+Workplace Status Code.
 
 Indicates the current status of the workplace (active, closed, etc.).
 
@@ -1776,7 +1788,7 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### ARBSTKFR / DB: [`idas`]
 
-Workplace Status Code - From
+Workplace Status Code - From.
 
 Status code of the workplace before a transition or change.
 
@@ -1784,7 +1796,7 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### ARBSTKTI / DB: [`idas`]
 
-Workplace Status Code - To
+Workplace Status Code - To.
 
 Status code of the workplace after a transition or change.
 
@@ -1792,13 +1804,15 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### BRANCHE1 / DB: [`idas`]
 
-[TO BE DONE]
+NACE Industry Code (DB93) for the Workplace.
 
-[NO DOCUMENTATION AVAILABLE]
+From `1993` on the grouping changed. This variable no longer exist, replaced by `BRANCHE3`).
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/branche03
 
 ### EJERKO / DB: [`idas`]
 
-Ownership Code
+Ownership type.
 
 Indicates the type of ownership of the workplace (private, public, etc.).
 
@@ -1806,7 +1820,7 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### ENDNDL / DB: [`idas`]
 
-Final Closure
+Final Closure.
 
 Indicates whether the workplace has permanently closed down.
 
@@ -1814,7 +1828,7 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### FILIAL / DB: [`idas`]
 
-Branch Indicator
+Branch/Subsidiary Indicator.
 
 Indicates whether the workplace is a branch/subsidiary of another company.
 
@@ -1822,129 +1836,127 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### FRELFREM / DB: [`idas`]
 
-Future Relationship
+Internal/External Closure via Spinoff
 
-Indicates the workplace's relationship to future workplace units.
+Indication of whether two workplaces (one closed down and one "absorbing") come from the same company.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/frelfrem
 
 ### FRELTILB / DB: [`idas`]
 
-Past Relationship
+Internal/External Creation via Spinoff.
 
-Indicates the workplace's relationship to previous workplace units.
+Indication of whether a created workplace (within last 2 years) belongs to the same company as the workplace from which it has been separated.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/freltilb
 
 ### IDTILB / DB: [`idas`]
 
-Back-reference ID
+Identity change indicator.
 
-Identifier used to link workplace information with previous periods.
+Indicates a possible change in the identity of a workplace seen back in time, ie. between the current year and the year before.
+
+- 'B1' = Preserved, identical 01-01-1980 31-12-3000
+- 'B2' = Preserved, not identical 01-01-1980 31-12-3000
+- 'O1' = newly created 01-01-1980 31-12-3000
+- 'O2' = Created via separation from a workplace (min. 30% of employees and min. 2 people (v. Address change)) 01-01-1980 31-12-3000
+- 'O3' = Created via "takeover" of premises / buildings from a closed workplace in the same industry 01-01-1980 31-12-3000
+- 'O4' = Created through transition from self-employed without employees per November (in the same industry) 01-01-1980 31-12-3000
+- 'O5' = Created via transition from workplace without employees per November (in the same industry) 01-01-1980 31-12-3000
+- 'SM' = Unchanged, with no employees per November also in the year before (preserved). 01-01-1980 31-12-3000
+- 'T1' = New access (no connection to a workplace the year before) 01-01-1980 31-12-3000
+- 'T2' = Access from work with November employees in the previous year (in the same industry) 01-01-1980 31-12-3000
+- 'T3' = Access of a "fictional" entity in connection with a formal change of ownership
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/idtilb
 
 ### KVANDFA / DB: [`idas`]
 
-Number of Skilled Workers
-
-Count of skilled workers employed at the workplace.
+`ANDFA`, only for women.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandfa
 
 ### KVANDHF / DB: [`idas`]
 
-Number of Workers with Higher Education
-
-Count of employees with higher education qualifications.
+`ANDHF`, only for women.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandhf
 
 ### KVANDIF / DB: [`idas`]
 
-Number of Workers with Intermediate Education
-
-Count of employees with intermediate level education.
+`ANDIF`, only for women.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandif
 
 ### KVANDLF / DB: [`idas`]
 
-Number of Unskilled Workers
-
-Count of unskilled workers at the workplace.
+`ANDLF`, only for women.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandlf
 
 ### LBNRFREM / DB: [`idas`]
 
-Forward Reference Number
+Unique serial number per workplace (`LBNR`) for the following year.
 
-Sequential number used for tracking future workplace relationships.
+Notice that if `IDTILB` = `B1` or `B2` , the `LBNR` is preserved and therefore `LBNR` is equal to `LBNRFREM`
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lbnrfrem
 
 ### LBNRTILB / DB: [`idas`]
 
-Backward Reference Number
+Unique serial number per workplace (`LBNR`) for the previous year.
 
-Sequential number used for tracking previous workplace relationships.
+Notice that if `IDTILB` = B1-B2 , the `LBNR` was preserved and therefore `LBNR` is equal to `LBNRTILB`
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lbnrtilb
 
 ### LEDPERG / DB: [`idas`]
 
-Management Personnel Group
-
-Classification code for management level personnel at the workplace.
+Number of periods of unemployment that workplace generated among main employees (`PTILL` = 35-36) that worked the previous year.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/ledperg
 
 ### LGRGNSAR / DB: [`idas`]
 
-Geographical Location Year
+Average annual unemployment rate.
 
-Reference year for the workplace's geographical location information.
+[TO BE DONE]
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lgrgnsar
 
 ### LONAAR / DB: [`idas`]
 
-Wage Year
-
-Reference year for wage information.
+Sum of Salaries for all employees.
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lonaar
 
+### `LONGNS` / DB: [`idas`]
+
+Average hourly salary for all main employees.
+
+https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longns
+
 ### LONGNSFA / DB: [`idas`]
 
-Longitudinal ID - Skilled Workers
-
-Tracking identifier for skilled worker categories over time.
+Average hourly salary for Skilled Workers in the Workplace (`PTILL` = 35).
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnsfa
 
 ### LONGNSHF / DB: [`idas`]
 
-Longitudinal ID - Higher Education
-
-Tracking identifier for higher education categories over time.
+Average hourly salary for the Highest level in the Workplace (`PTILL` = 31-33).
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnshf
 
 ### LONGNSIF / DB: [`idas`]
 
-Longitudinal ID - Intermediate Education
-
-Tracking identifier for intermediate education categories over time.
+Average hourly salary for Non-Skilled Workers in the Workplace (`PTILL` = 36).
 
 https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/LONGNSIF
 
 ### LONGNSLF / DB: [`idas`]
 
-Longitudinal ID - Unskilled Workers
-
-Tracking identifier for unskilled worker categories over time.
+Average hourly salary for "Mid-level or intermediate" workers in the Workplace (`PTILL` = 34).
 
 https://www.dst.dk/da/tilsalg/forskningsservice/dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnslf
 
