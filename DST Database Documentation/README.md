@@ -302,7 +302,7 @@ https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvaria
 
 ### `ANTPERSF` / DB: [`fam`]
 
-Number of people in the family
+Number of people in the family.
 
 https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/antpersf
 
