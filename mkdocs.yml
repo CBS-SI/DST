@@ -4,7 +4,7 @@ repo_url: https://github.com/CBS-SI/DST
 repo_name: CBS-SI/DST
 site_url: https://cbs-si.github.io/DST/
 nav:
-  - Home: "about.md"
+  - Home: "index.md"
   - Intro to new users of Denmark Statistics: "intro.md"
   - Variables Documentation:
       - bef: "variables/bef.md"
