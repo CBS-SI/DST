@@ -2,7 +2,7 @@ site_name: DST Public Resources
 
 repo_url: https://github.com/CBS-SI/DST
 repo_name: CBS-SI/DST
-site_url: http://127.0.0.1:8000/
+site_url: https://cbs-si.github.io/DST/
 nav:
   - Home: "about.md"
   - Intro to new users of Denmark Statistics: "intro.md"
