@@ -1,0 +1,88 @@
+site_name: DST Public Resources
+
+repo_url: https://github.com/CBS-SI/DST
+repo_name: CBS-SI/DST
+site_url: http://127.0.0.1:8000/
+nav:
+  - Home: "about.md"
+  - Intro to new users of Denmark Statistics: "intro.md"
+  - Variables Documentation:
+      - bef: "variables/bef.md"
+      - poppers: "variables/poppers.md"
+      - fam: "variables/fam.md"
+      - fida: "variables/fida.md"
+      - firm: "variables/firm.md"
+      - frpe: "variables/frpe.md"
+      - hust: "variables/hust.md"
+      - idan: "variables/idan.md"
+      - idap: "variables/idap.md"
+      - idas: "variables/idas.md"
+      - idfi: "variables/idfi.md"
+      - iepe: "variables/iepe.md"
+      - ivnv: "variables/ivnv.md"
+      - ivpe: "variables/ivpe.md"
+      - ivps: "variables/ivps.md"
+      - ind: "variables/ind.md"
+      - indh: "variables/indh.md"
+      - nbpt: "variables/nbpt.md"
+      - nogt: "variables/nogt.md"
+      - All variables: "variables/all_variables.md"
+  - Databases Relationships: "database_relationships.md"
+theme:
+  name: material
+  logo: assets/images/CBS_logo.png
+  favicon: assets/images/cbs_favicon.ico
+  palette:
+    scheme: cbs
+  features:
+    - navigation.path
+    - navigation.prune
+    - navigation.tabs
+    - navigation.top
+    - content.code.annotate
+    - toc.follow
+    #- toc.integrate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.arithmatex:
+      generic: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.mark
+  - attr_list
+  - footnotes
+  - def_list
+  - admonition
+  - tables
+  - md_in_html
+
+extra_css:
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - assets/javascript/extra.js
+
+plugins:
+  - search
+  - git-committers:
+      repository: CBS-SI/DST
+      branch: main

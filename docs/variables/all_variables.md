@@ -1,61 +1,46 @@
-# SI DST Data Catalog
-
-[WORK IN PROGRESS]
-
-## Database Catalogue
-
-[TO BE DONE]
-
-## Variable Catalogue
-
-### Tools
-
-- Variable Searching tool: https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable
-- Registry list: https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html
-
-### `PNR` / DB: [`bef`, `poppers`,`fida`,`idan` ,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`, `ophgin`, `veuv`, `udda`]
+### `PNR` / DB: [`bef`, `poppers`,`fida`,`frpe`, `idan` ,`idap`, `iepe`, `ivpe`, `ind`, `indh`, `ophgin`, `veuv`, `udda`]
 
 Unique identification of person is used as key to `PERSON_ID`.
 
 People's anonimized CPR. All CPR PNRs are converted to a unidentified PERSON_ID.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/pnr
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/pnr)
 
 ### `ALDER` / DB: [`bef`, `poppers`, `iepe`]
 
 Age.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/alder
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/alder)
 
 ### `FAMILIE_ID` / DB: [`bef`, `poppers_famid`]
 
 Basic legal family unit. All individuals have a FAMILIE_ID.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/familier/familie-id
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/familier/familie-id)
 
 ### `C_FAMILIE_ID` / DB: [`fam`, `poppers_cfamid`]
 
 Focuses on the family links. C_FAMILIE_ID is only for coupled families, in which C_FAMILIE_ID = PERSON_ID for the mother.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/familier/c-familie-id
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/familier/c-familie-id)
 
 ### `MOR_ID` / DB: [`bef`, `iepe`]
 
 `PERSON_ID` of the person's mother.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/mor-id
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/mor-id)
 
 ### `FAR_ID` / DB: [`bef`, `iepe`]
 
 `PERSON_ID` of the person's father.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/far-id
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/far-id)
 
 ### `EFALLE` / DB: [`bef`]
 
 EFALLE_ID is the social security number of the person with whom a given person lives and forms a couple in the form of marriage, registered partnership, cohabiting couples or cohabiting couples.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/efalle
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/efalle)
 
 ### `AEGTE_ID` / DB: [`bef`]
 
@@ -69,25 +54,25 @@ Specifies the social security number ID of spouse or registered partner. There i
 - Long-term Partner = social security number of deceased partner
 - Death = spouse / partner social security number
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/aegte-id
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/aegte-id)
 
-### `BOPIKOM` / DB: [`bef`, `hust`, `fam`]
+### `BOPIKOM` / DB: [`bef`, `hust`, `fam`, `nbpt`]
 
 The address in the municipality (road no., house number, house letter, floor, side / door)
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/bopikom
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/bopikom)
 
 ### `KOM` / DB: [`bef`, `hust`, `fam`, `iepe`, `nbpt`, `nogt`]
 
 Municipal code from the National Register Address.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/kom
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/kom)
 
 ### `BOP_VFRA` / DB: [`bef`]
 
 Date of immigration.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/bop-vfra
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/bop-vfra)
 
 ### `VAN_VTIL` / DB: [`bef`]
 
@@ -95,7 +80,7 @@ Date when immigration applies from.
 
 A person who immigrates several times during a period is included the corresponding number of times and appears with several immigration dates.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/van-vtil
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/van-vtil)
 
 ### `CIVST` / DB: [`bef`, `iepe`]
 
@@ -111,13 +96,13 @@ The marital code thus became from d. Oct 1 1989 expanded from 4 to 7 marital sta
 - 'L' = Longitudinal living of 2 partners.
 - 'D' = Dead
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/civst
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/civst)
 
 ### `CIV_FRA` / DB: [`bef`]
 
 Date of the most recently recorded change of marital status (married, divorced, dead) of the person. Back to 2004, if `CVIST` (marital status) is equal to U (unmarried), `CIV_FRA` is set equal to the date of birth.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/civ-vfra
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/civ-vfra)
 
 ### `FAMILIE_TYPE` / DB: [`bef`, `fam`]
 
@@ -133,7 +118,7 @@ Type of family (people of a family live at the same address).
 - '9' = single
 - '10' = Non-resident children
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/familie-type
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/familie-type)
 
 ### `FM_MARK` / DB: [`bef`]
 
@@ -146,19 +131,19 @@ Person cohabitation type.
 - '5' = For children: Living with single father. For adults: The value does not exist.
 - '6' = Do not live with parents
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/fm-mark
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/fm-mark)
 
 ### `FOEDREG_KODE` / DB: [`bef`, `iepe`]
 
 Place of birth.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/foedreg-kode
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/foedreg-kode)
 
 ### `FOED_DAG` / DB: [`bef`]
 
 Birthday.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/foed-dag
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/foed-dag)
 
 ### `IE_TYPE` / DB: [`bef`, `iepe`]
 
@@ -168,7 +153,7 @@ Definitions of immigrants, descendants, and people of Danish origin, which colle
 - '2' = Immigrant. People born abroad. None of the parents are both Danish citizens and born in Denmark.
 - '3' = Descendant. People born in Denmark. None of the parents are both Danish citizens and born in Denmark.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/udlaendinge/ie-type
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/udlaendinge/ie-type)
 
 ### `GENERATION` / DB: [`bef`, `iepe`]
 
@@ -180,7 +165,7 @@ Whether the father and/or mother were born in Denmark or abroad.
 - '3' = One parent born in Denmark and another abroad.
 - '4' = Parental information not available.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/cpr-oplysninger/generation
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/cpr-oplysninger/generation)
 
 ### `HUSTYPE` / DB: [`bef`, `hust`]
 
@@ -193,7 +178,7 @@ Household composition.
 - '5' = A non-resident child under 18 years
 - '6' = Household of several families
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/husstande/hustype
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/husstande/hustype)
 
 ### `KOEN` / DB: [`bef`, `frpe`, `idap`, `iepe`]
 
@@ -203,15 +188,15 @@ Gender (CPR based).
 - '2' = Female
 - '9' = Unknown / Company
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/koen
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/koen)
 
 ### `OPR_LAND` / DB: [`bef`, `iepe`]
 
 Citizenship / Country of origin of the person.
 
-Encoding: https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/lande-psd?
+Encoding: [Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/lande-psd?)
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/opr-land
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/opr-land)
 
 ### `PLADS` / DB: [`bef`]
 
@@ -223,7 +208,7 @@ A person's "place" within the couple.
 
 In a couple, 1 is the woman (or oldest if not man/women couple), 2 the man (or youngest if not man/women couple), 3 is a person under the age of 25 who lives at the same address as at least one of his parents who has never been married or registered partner (marital status = unmarried) and who is not a father or mother of anyone who lives or has lived in Denmark.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/plads
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/plads)
 
 ### `REG` / DB: [`bef`]
 
@@ -236,7 +221,7 @@ Region of Denmark.
 - '84' = Capital Region
 - '85' = Zealand
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/reg
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/reg)
 
 ### `STATSB` / DB: [`bef`, `iepe`, `ophgin`]
 
@@ -244,7 +229,7 @@ Citizenship / Country of origin of the person.
 
 Codes available in the documentation (link below).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb)
 
 ### `STATFODF` / DB: [`iepe`]
 
@@ -252,7 +237,7 @@ Continent of origin of the father.
 
 Codes available in the documentation (link below).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb)
 
 ### `STATFODM` / DB: [`iepe`]
 
@@ -260,7 +245,7 @@ Continent of origin of the mother.
 
 Codes available in the documentation (link below).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb)
 
 ### `STATFOED` / DB: [`iepe`]
 
@@ -268,19 +253,19 @@ Continent of origin of the person.
 
 Codes available in the documentation (link below).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/statsb)
 
 ### `HOVEDPERSON` / DB: [`fam`]
 
 Personal id (`pnr`) of the family Protagonist (see `PLADS` variable).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forebyggelsesregistret/plads
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forebyggelsesregistret/plads)
 
 ### `PAPNR` / DB: [`fam`]
 
 Personal id (`PNR`) of the family Partner (see `PLADS` variable).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forebyggelsesregistret/plads
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forebyggelsesregistret/plads)
 
 ### `ALDAELDST` / DB: [`fam`]
 
@@ -298,43 +283,43 @@ Youngest child age in `E_FAMILIE` (see `E_FAMILIE`)
 
 Number of children in the family.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/familier/antboernf
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/familier/antboernf)
 
 ### `ANTPERSF` / DB: [`fam`]
 
 Number of people in the family.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/antpersf
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/antpersf)
 
 ### `CVRNR` / DB: [`firm`, `fida`, `frpe`, `ivnv`, `ivpe`]
 
 Central Business Register (CVR) number. The CVR number is the unique id of a legal entity.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cvrnr
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cvrnr)
 
 ### `ARBNR` / DB: [`fida`]
 
 10-digit identification number for a workplace. The value is `0` for self-employed and employed spouses who are not in the business register.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-fra-det-centrale-oplysningsseddelregister/arbnr
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-fra-det-centrale-oplysningsseddelregister/arbnr)
 
 ### `LBNR` / DB: [`fida`, `idan`, `idas`]
 
 Unique serial number per workplace that is constant over time for preserved (not definitively closed) workplaces.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/ida-databasen/ida-ansaettelser/lbnr
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/ida-databasen/ida-ansaettelser/lbnr)
 
 ### `ANTBOERNH` / DB: [`hust`]
 
 Number of children in the household.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/husstande/antboernh
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/husstande/antboernh)
 
 ### `ANTPERSH` / DB: [`hust`]
 
 Number of people in the household.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/cpr-oplysninger/antperh
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/cpr-oplysninger/antperh)
 
 ### `BOPIKOM_GL` / DB: [`nbpt`]
 
@@ -352,7 +337,7 @@ https://www.dst.dk/extranet/ForskningVariabellister/NBPT%20-%20N%C3%B8gle%20bop%
 
 Opgang housing project. The address in the municipality (road no., House no., House letter). See `BOPIKOM` for further description.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/opgikom
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/opgikom)
 
 ### `OPGIKOM_GL` / DB: [`nogt`]
 
@@ -374,13 +359,13 @@ Course end. Specifies the way the course is completed for each student, ie. whet
 - '7' = Uninformed termination
 - '8' = No sample associated with the course
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/AFSLUTN
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/AFSLUTN)
 
 ### `AKOMFANG` / DB: [`veuv`]
 
 The proportion of a full academic year to which the course corresponds. Decimal fraction of 1 year of 5 digits where the comma is implied. The proposed 0 must not be suppressed. A full-time course is thus indicated by the value `10000`, while a half-time course is indicated by the value `05000`.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/AKOMFANG
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/AKOMFANG)
 
 ### `CPRTJEK` / DB: [`ophgin`, `veuv`, `udda`]
 
@@ -395,7 +380,7 @@ CPR check. Control value calculated on a social security number from a given dat
 - '6' = Social security number without control digit, but not in valid series
 - '7' = Date of birth is after the date the age is calculated from
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cprtjek
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cprtjek)
 
 ### `CPRTYPE` / DB: [`ophgin`, `veuv`, `udda`]
 
@@ -407,67 +392,67 @@ CPR type.
 - '4' = Pnumber without control digit, series 2
 - '5' = Pnumber without control digit, series 3
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cprtype
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/cprtype)
 
 ### `KURSIST_VFRA` / DB: [`veuv`]
 
 Start date of the course.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/KURSIST-VFRA
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/KURSIST-VFRA)
 
 ### `KURSIST_VTIL` / DB: [`veuv`]
 
 End date of the course.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/KURSIST-VTIL
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Kursistregistret/KURSIST-VTIL)
 
 ### `UDD` / DB: [`veuv`, `udda`]
 
 Code for an education understood as the educational program or activity. All educational programs have a UDD code (eg: Nurse = 5166, Engineer = 5189)
 
-https://www.dst.dk/da/statistik/dokumentation/times/uddannelseregister/udd
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/uddannelseregister/udd)
 
 ### `VERSION` / DB: [`firm`, `frpe`, `ophgin`, `udda`]
 
 Time reference. The first time data is loaded is `VERSION = 01` for a given REFERENCE TIME, the second time `VERSION = 02`, etc.
 
-https://www.dst.dk/da/statistik/dokumentation/times/moduldata-faelles-variable/version
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/moduldata-faelles-variable/version)
 
 ### `ARBGNR` / DB: [`idan`, `idas`, `idfi`]
 
 Workplace 12-digits Unique Code.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbgnr
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbgnr)
 
 ### `ANSAAR` / DB: [`idan`]
 
 Year of employment at workplace.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansaar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansaar)
 
 ### `ANSDAGE` / DB: [`idan`]
 
 Number of days employed.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansdage
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansdage)
 
 ### `ANSXFREM` / DB: [`idan`]
 
 Change of employment from the previous year to the current year for each employee. The variable thus looks forward in time to November the following year.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansxfrem
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansxfrem)
 
 ### `ANSXTILB` / DB: [`idan`]
 
 Change in employment at the current workplace compared to the previous year for the individual employee. The variable thus looks back in time to November the year before.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansxtilb
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/ansxtilb)
 
 ### `ARBLED` / DB: [`idan`]
 
 Unemployment rate in that working year (excluding holidays). Total unemployed weeks in a year divided by the total number of working weeks in a year.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed---beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser-/arbled
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed---beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser-/arbled)
 
 ### `ARBSTK` / DB: [`idan`]
 
@@ -475,7 +460,7 @@ Workplace 4-digits Code.
 
 The code itself is not unique. Only in combination with the employer number (see `ARBGNR` under workplaces) can the individual workplace be identified. The identification is only valid for the current year and has no lasting impact on the separation of individual workplaces. For this purpose, workplace number is used (`ARDNR`)
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstk
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstk)
 
 ### `JOBKAT` / DB: [`idan`]
 
@@ -489,7 +474,7 @@ Type of job.
 - '7' = Bijob (Over 8 weeks with partial unemployment during the year)
 - '9' = Undisclosed
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/jobkat
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/jobkat)
 
 ### `JOBLON` / DB: [`idan`]
 
@@ -497,7 +482,7 @@ Salary linked to particular employment.
 
 Wages in the individual employment relationship for both main and secondary employees.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenforhold-der-vedroerer-ida-ansaettelser-/joblon
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenforhold-der-vedroerer-ida-ansaettelser-/joblon)
 
 ### `LONMFREM` / DB: [`idan`]
 
@@ -506,7 +491,7 @@ Whether an employee is an employee the following year or not.
 - '0' = Not employed the following year
 - '1' = Employee the following year
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/lonmfrem
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/lonmfrem)
 
 ### `LONMTILB` / DB: [`idan`]
 
@@ -515,7 +500,7 @@ Whether an employee is an employee the year before or not.
 - '0' = Not employed the year before
 - '1' = Employee the year before
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/lonmtilb
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/lonmtilb)
 
 ### `PERSBRC` / DB: [`idan`]
 
@@ -529,7 +514,7 @@ Personal industry code received from the Register-based Workforce Statistics (RA
 - '6XXXXX' = Transport, Post and Telecommunications
 - '8XXXXX' = Public and personal services
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/persbrc
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/persbrc)
 
 ### `STILL` / DB: [`idan`]
 
@@ -545,7 +530,7 @@ Socio-economic Job Position variable code that indicates the type of employee at
 
 There are more codes in the data but the documentation do not say what they mean (e.g. 11).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/still
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/still)
 
 ### `TILKNYT` / DB: [`idan`]
 
@@ -572,13 +557,13 @@ Association with the primary place of work of the employee during working hours.
 - '34' = Part time (>= 10-19 hours), serial, shorter than one year
 - '35' = Part time (< 10 hours), serial, shorter than one year
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/tilknyt
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/tilknyt)
 
 ### `TIMELON` / DB: [`idan`]
 
 Hourly salary.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenforhold-der-vedroerer-ida-ansaettelser-/timelon
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenforhold-der-vedroerer-ida-ansaettelser-/timelon)
 
 ### `TLONKVAL` / DB: [`idan`]
 
@@ -592,7 +577,7 @@ Quality of `TIMELON` variable. It captures the relative uncertainty of the quali
 
 The relevant populations for TLONKVAL can be defined using the variable `TYPE`
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenforhold-der-vedroerer-ida-ansaettelser-/tlonkval
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenforhold-der-vedroerer-ida-ansaettelser-/tlonkval)
 
 ### `TYPE` / DB: [`idan`]
 
@@ -607,7 +592,7 @@ Type of employment.
 - 'S' = Self employed
 - '3' = Most important not November jobs
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/type
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-ansaettelser/type)
 
 ### `IELANDF`
 
@@ -637,25 +622,25 @@ Mother inmigration type (see `IE_TYPE`)
 
 Number of workplaces in the company.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-firmaer/antalarb
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-firmaer/antalarb)
 
 ### `ANTARBB` / DB: [`idfi`]
 
 Number of retained workplaces in the company between the current year and the year before.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/ANTARBB
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/ANTARBB)
 
 ### `FANSB` / DB: [`idfi`]
 
 Total number of employees in the company.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/FANSB
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/FANSB)
 
 ### `FANSH` / DB: [`idfi`]
 
 Number of _main_ employees in the company. Number of employees with main occupation in the company.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/FANSH
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/FANSH)
 
 ### `SARBGNRX` / DB: [`idfi`]
 
@@ -664,7 +649,7 @@ https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/FA
 - '0' = Unchanged employer number
 - '1' = Changed employer number
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/SARBGNRX
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/SARBGNRX)
 
 ### `SIDTILB` / DB: [`idfi`]
 
@@ -686,7 +671,7 @@ Identity of largest workplace in the company between the current year and the ye
 
 Serial number for largest workplace in company.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/SLBNR
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/SLBNR)
 
 ### `STORDBXX` / DB: [`idfi`]
 
@@ -698,7 +683,7 @@ https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/SL
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/STORDB03
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/STORDB03)
 
 ### `UOPLANSB` / DB: [`idfi`]
 
@@ -706,7 +691,7 @@ Secondary employees in company with undisclosed workplace.
 
 The variable must be seen in the context of the variable `FANSB` (Number of employees in the company). In this, the number of secondary employees in each company is calculated on the basis of the workplace data set (IDAS) for the given year. This includes only valid workplaces, ie. fictitious and undisclosed workplaces are not included. However, there are also secondary employees who are associated with an undisclosed workplace and who therefore do not appear in that dataset.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/UOPLANSB
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/IDA-databasen/IDA-firmaer/UOPLANSB)
 
 ### `ALMAUDD` / DB: [`udda`]
 
@@ -714,13 +699,13 @@ Code for highest completed _general_ education.
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ALMAUDD
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ALMAUDD)
 
 ### `ALM_VFRA` / DB: [`udda`]
 
 Time of highest completed general education.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ALM-VFRA
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ALM-VFRA)
 
 ### `ERHAUDD` / DB: [`udda`]
 
@@ -728,7 +713,7 @@ Highest completed _vocational_ qualifying education.
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERHAUDD
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERHAUDD)
 
 ### `ERHINSTNR` / DB: [`udda`]
 
@@ -736,13 +721,13 @@ Institutional number of the institution where the highest completed vocational q
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERHINSTNR
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERHINSTNR)
 
 ### `ERH_VFRA` / DB: [`udda`]
 
 Time of obtaining vocational competency-providing education
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERH-VFRA
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/ERH-VFRA)
 
 ### `HFAUDD` / DB: [`udda`]
 
@@ -750,7 +735,7 @@ Code for a person's highest completed education at any given time.
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD)
 
 ### `HFINSTNR` / DB: [`udda`]
 
@@ -758,19 +743,19 @@ Code for the name of the institution where the highest completed education is co
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/uddannelsesdata/hoejest-fuldfoerte-uddannelse---status/hfinstnr
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/uddannelsesdata/hoejest-fuldfoerte-uddannelse---status/hfinstnr)
 
 ### `HF_VFRA` / DB: [`udda`]
 
 Time of highest completed education.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HF-VFRA
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HF-VFRA)
 
 ### `IG_VFRA` / DB: [`udda`]
 
 Starting time of ongoing education.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/IG-VFRA
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/IG-VFRA)
 
 ### `FORKLAR` / DB: [`ophgin`]
 
@@ -778,7 +763,7 @@ Code for residence permit type from the Immigration Service.
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/HFAUDD)
 
 ### `GRUNDLAG` / DB: [`ophgin`]
 
@@ -786,7 +771,7 @@ Code of the subdivision of residence permit type from the Immigration Service.
 
 Check the documentation for the specific categorical encodings:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/grundlag
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Uddannelsesdata/Hoejest-fuldfoerte-uddannelse---status/grundlag)
 
 ### `IMPUTERET` / DB: [`ophgin`]
 
@@ -801,7 +786,7 @@ Code for imputation status of the person's residence permit. After a process, re
 - '29' Before 1997, a Nordic citizen, should not be imputed
 - '99' Imputed in connection with inventory sheet (statusopgørelse)
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/imputeret
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/imputeret)
 
 ### `REFERENCEID`
 
@@ -829,31 +814,31 @@ Code for residence permit type from the Immigration Service.
 - '9997' = Nordic citizen
 - '9999' = Immigrated before 1997
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/kategori
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/kategori)
 
 ### `TILLADELSESDATO` / DB: [`ophgin`]
 
 Date of residence permit.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/tilladelsesdato
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/moduldata-for-befolkning-og-valg/tilladelsesdato)
 
 ### `AKASAF` / DB: [`idap`]
 
 Most Recent year as a member of an Unemployment fund (A-kassa).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/akasaf
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/akasaf)
 
 ### `AKASST` / DB: [`idap`]
 
 Most recent start year as a member of A-kassa.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/akasst
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/akasst)
 
 ### `ALDERNOV` / DB: [`idap`]
 
 Age calculated at the end of November (reference period).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/aldernov
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/aldernov)
 
 ### `ARLEDGR` / DB: [`idap`]
 
@@ -861,7 +846,7 @@ Unemployment rate.
 
 The unemployment rate is calculated as the number of hours available in relation to the number of (possible) working hours for a given year.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/arledgr
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ledighed-og-beskaeftigelsesoplysninger-der-vedroerer-ida-personer/arledgr)
 
 ### `ATPAR` / DB: [`idap`]
 
@@ -869,7 +854,7 @@ Number of years as an employee.
 
 A person who has been abroad and has therefore not been included in the population for one or more years will have his ATPAR reset.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/atpar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/atpar)
 
 ### `EJNOV` / DB: [`idap`]
 
@@ -877,7 +862,7 @@ Number of supplementary Non-November employment appointments.
 
 Employment with the largest ATP contribution is defined as being the most important non-November employment. Thus, when the most important non-November employment is selected, any additional non-November employment per year is counted.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/ejnov
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/ejnov)
 
 ### `EJNOVSUM` / DB: [`idap`]
 
@@ -885,7 +870,7 @@ Non-November Employment Salary Sum.
 
 The variable sums up wages in supplementary and main employment for non-November jobs.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/ejnovsum
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/ejnovsum)
 
 ### `ERHVER` / DB: [`idap`]
 
@@ -895,13 +880,13 @@ The maximum work experience for part-time insured persons can be assumed 750 per
 
 For people who have been abroad and therefore have not been included in the population for one or more years, `ERHVER` will be reset.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/erhver
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/erhver)
 
 ### `ERHVER79` / DB: [`idap`]
 
 Work experience from 1964 to the end of 1979 calculated on the basis of ATP contributions. It counts the number of employeed years for people born in 1921 - 1971 until 1980.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/erhver79
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/erhver79)
 
 ### `LONIND` / DB: [`idap`]
 
@@ -909,7 +894,7 @@ Total summed salary linked to the person.
 
 All employers issue an information sheet to SKAT and their employees annually (during January). The information sheet is an overview of paid salary and contributions. nr. 13 specifies the net salary for each employment to which the information form relates.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/lonind
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/lonind)
 
 ### `NSUP` / DB: [`idap`]
 
@@ -917,13 +902,13 @@ Number of supplementary November-employments in addition to main and secondary e
 
 The employment that relates to November but not to the main or secondary employment is counted for the individual. The supplementary employment is only included if the amount is above the salary limit.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/nsup
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/nsup)
 
 ### `NSUPSUM` / DB: [`idap`]
 
 Summed salary for Supplementary November Employments.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/nsupsum
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/loenoplysninger-der-vedroerer-ida-personer/nsupsum)
 
 ### `PSTILL` / DB: [`idap`]
 
@@ -931,7 +916,7 @@ Primary Job Position Code.
 
 [TO BE DONE]
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/pstill
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/pstill)
 
 ### `SSTILL` / DB: [`idap`]
 
@@ -939,7 +924,7 @@ Secondary Job Position Code.
 
 [TO BE DONE]
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/sstill
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/sstill)
 
 ### `SENAFAR` / DB: [`idap`]
 
@@ -947,7 +932,7 @@ Latest exit of the labor market.
 
 Most recent termination of the labor market as employed or unemployed for 2 consecutive years.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/senafar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/senafar)
 
 ### `SENSTAR` / DB: [`idap`]
 
@@ -955,13 +940,13 @@ Latest start in the labor market.
 
 Latest start in the labor market as employed or unemployed is formed from the primary job positio for 2 consecutive years.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/senstar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/senstar)
 
 ### `STARTAR` / DB: [`idap`]
 
 First Year in the Labor Market.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/startar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/beskaeftigelsesoplysninger-der-vedroerer-ida-personer/startar)
 
 ### `GF_AARE` / DB: [`firm`]
 
@@ -969,7 +954,7 @@ Company profits (kr.).
 
 Profit for the year after taxes measured in kroner. The total result (surplus / loss) of the activity for the financial year after deduction of the corporation tax (SSAR) that caused the activity of the year. In personally owned companies, this year's result must also cover work remuneration to the company's owner / owners.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-aare
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-aare)
 
 ### `GF_AARSV` / DB: [`firm`]
 
@@ -979,7 +964,7 @@ Company number of fulltime employees.
 
 - From the year 2008: The calculation is made from this on the basis of companies' reporting to E-income. The companies report monthly all hours and wages for all their employees, and therefore this is just a count of how many are reported working +27 hours per week.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-aarsv
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-aarsv)
 
 ### `GF_AAT` / DB: [`firm`]
 
@@ -987,7 +972,7 @@ Fixed assets (kr.)
 
 Permanent ownership or use of the company, eg buildings, machinery, furniture, patents, licenses and long-term investments of a financial nature, eg shares and bonds.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-aat
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-aat)
 
 ### `GF_AINV` / DB: [`firm`]
 
@@ -995,19 +980,19 @@ Net Investment (kr.)
 
 Investments (ATIT) minus investment departure (AFAT).
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-ainv
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-ainv)
 
 ### `GF_ANSATTE` / DB: [`firm`]
 
 Indicates the number of people employed by the company at the end of November.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/gf-ansatte
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/gf-ansatte)
 
 ### `GF_AT` / DB: [`firm`]
 
 Total Assets (kr.) at the end of the year.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-at
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-at)
 
 ### `GF_BAGATEL` / DB: [`firm`]
 
@@ -1017,7 +1002,7 @@ Code indicating whether the company is above or below the threshold of accountin
 - '1' = Below
 - '3' = Forced below
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-bagatel
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-bagatel)
 
 ### `GF_BAV` / DB: [`firm`]
 
@@ -1025,7 +1010,7 @@ Gross profit (kr.)
 
 Gross profit is calculated as revenue minus consumption of goods minus the purchase of wages and subcontracting.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-bav
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-bav)
 
 ### `GF_BD_LS` / DB: [`firm`]
 
@@ -1057,7 +1042,7 @@ Code for the method for determining the variable `GF_bagatel`.
 
 Categorical variable but without documentation of what they mean (e.g. 15, 19, 12)
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-bg-metode
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-bg-metode)
 
 ### `GF_EGUL` / DB: [`firm`]
 
@@ -1065,7 +1050,7 @@ Equity (kr.)
 
 Total assets (AT) at the end of the year minus the sum of provisions and other debt obligations.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-egul
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-egul)
 
 ### `GF_EKSP` / DB: [`firm`]
 
@@ -1073,7 +1058,7 @@ Exports (kr.)
 
 Total exports of goods and services without VAT.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/firmastatistik/gf-eksp
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/firmastatistik/gf-eksp)
 
 ### `GF_GR009_DB93` / DB: [`firm`]
 
@@ -1108,28 +1093,28 @@ https://www.dst.dk/Site/Dst/Udgivelser/GetPubFile.aspx?id=16684&sid=nace
 Company's main industry expressed by NACE Standard Industry Classification of 10 groups for Danish Industrial Classification of All Economic Activities (Dansk Branchekode) 2007.
 
 Please check the following link for the NACE encodings:
-https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07)
 
 ### `GF_GR019_DB07` / DB: [`firm`]
 
 Company's main industry expressed by NACE Standard Industry Classification of 19 groups for Danish Industrial Classification of All Economic Activities (Dansk Branchekode) 2007.
 
 Please check the following link for the NACE encodings:
-https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07)
 
 ### `GF_GR036_DB07` / DB: [`firm`]
 
 Company's main industry expressed by NACE Standard Industry Classification of 36 groups for Danish Industrial Classification of All Economic Activities (Dansk Branchekode) 2007.
 
 Please check the following link for the NACE encodings:
-https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07)
 
 ### `GF_GR127_DB07` / DB: [`firm`]
 
 Company's main industry expressed by NACE Standard Industry Classification of 127 groups for Danish Industrial Classification of All Economic Activities (Dansk Branchekode) 2007.
 
 Please check the following link for the NACE encodings:
-https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07)
 
 ### `GF_NACE2_DB93` / DB: [`firm`]
 
@@ -1137,7 +1122,7 @@ NACE Company division following Dansk Branchekode 1993.
 
 NACE's first two-digit numerical code. NACE is the acronym used to designate the various statistical classifications of economic activities developed since 1970 in the European Union (EU).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07)
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background
 
 Please check the following link for the NACE encodings:
@@ -1149,7 +1134,7 @@ NACE Company group following Dansk Branchekode 1993.
 
 NACE's first three-digit numerical code. NACE is the acronym used to designate the various statistical classifications of economic activities developed since 1970 in the European Union (EU).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07)
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background
 
 Please check the following link for the NACE encodings:
@@ -1161,7 +1146,7 @@ NACE Company class following Dansk Branchekode 1993.
 
 NACE's four-digit numerical code. NACE is the acronym used to designate the various statistical classifications of economic activities developed since 1970 in the European Union (EU).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07)
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background
 
 Please check the following link for the NACE encodings:
@@ -1173,11 +1158,11 @@ NACE Company division following Dansk Branchekode 2007.
 
 NACE's first two-digit numerical code. NACE is the acronym used to designate the various statistical classifications of economic activities developed since 1970 in the European Union (EU).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07)
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background
 
 Please check the following link for the NACE encodings:
-https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07)
 
 ### `GF_NACE3_DB07` / DB: [`firm`]
 
@@ -1185,11 +1170,11 @@ NACE Company group following Dansk Branchekode 2007.
 
 NACE's first three-digit numerical code. NACE is the acronym used to designate the various statistical classifications of economic activities developed since 1970 in the European Union (EU).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07)
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background
 
 Please check the following link for the NACE encodings:
-https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07)
 
 ### `GF_NACE_DB07` / DB: [`firm`]
 
@@ -1197,11 +1182,11 @@ NACE Company class following Dansk Branchekode 2007.
 
 NACE's four-digit numerical code. NACE is the acronym used to designate the various statistical classifications of economic activities developed since 1970 in the European Union (EU).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-nace2-db07)
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=NACE_background
 
 Please check the following link for the NACE encodings:
-https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/nomenklaturer/db07)
 
 ### `JUR_HOVED_BRA_DB93` / DB: [`firm`]
 
@@ -1210,7 +1195,7 @@ Complete six-digit NACE classification code following Dansk Branchekode 1993.
 The first four digits of the code are the same in all European countries (`GF_NACE_DB93`). The fifth digit might vary from country to country and further digits are sometimes placed by suppliers of databases.
 
 Encodings available in the documentation:
-https://www.dst.dk/da/Statistik/dokumentation/Times/groenne-varer-og-tjenester/jur-hoved-bra-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/groenne-varer-og-tjenester/jur-hoved-bra-db07)
 
 ### `JUR_HOVED_BRA_DB07` / DB: [`firm`]
 
@@ -1219,7 +1204,7 @@ Complete six-digit NACE classification code following Dansk Branchekode 2007.
 The first four digits of the code are the same in all European countries (`GF_NACE_DB07`). The fifth digit might vary from country to country and further digits are sometimes placed by suppliers of databases.
 
 Encodings available in the documentation:
-https://www.dst.dk/da/Statistik/dokumentation/Times/groenne-varer-og-tjenester/jur-hoved-bra-db07
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/groenne-varer-og-tjenester/jur-hoved-bra-db07)
 
 ### `GF_IMPORT` / DB: [`firm`]
 
@@ -1227,13 +1212,13 @@ Imports (kr.)
 
 Company's total imports. All amounts in kroner without VAT.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-import
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-import)
 
 ### `GF_INKLEJER` / DB: [`firm`]
 
 Number of employees (including the owner).
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-inklejer
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-inklejer)
 
 ### `GF_KOB` / DB: [`firm`]
 
@@ -1241,7 +1226,7 @@ Domestic purchases plus imports (kr.)
 
 Domestic purchases of goods and services as well as imports of goods (but not imports of services).All amounts are in kroner without VAT.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-kob
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-kob)
 
 ### `GF_LGAGMV` / DB: [`firm`]
 
@@ -1249,7 +1234,7 @@ Total Payroll (kr.)
 
 Includes salaries and salaries, pension expenses and other social security costs. Measured in kroner.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-lgagmv
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-lgagmv)
 
 ### `GF_MK_RE` / DB: [`firm`]
 
@@ -1259,7 +1244,7 @@ https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-lg
 - '1' = Match
 - '2' = Non GF unit.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-mk-re
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/gf-mk-re)
 
 ### `GF_OMS` / DB: [`firm`]
 
@@ -1267,7 +1252,7 @@ Revenue (kr.)
 
 Company revenue from the sale of products and services that come from the company's primary operations. Measured in kroner.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-oms
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-oms)
 
 ### `GF_OPR_OMS` / DB: [`firm`]
 
@@ -1317,7 +1302,7 @@ EBIT / Operational Profit (kr.)
 
 Revenue from primary operations (revenue) and secondary operations (other operating income) less the following costs: consumption of goods and services for ordinary operations, wages and salaries, pension costs and other social security costs, depreciation and write-downs of tangible and intangible fixed assets, and write-downs of current assets to the extent that they exceed normal write-downs.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-rfep
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-rfep)
 
 ### `GF_VTV` / DB: [`firm`]
 
@@ -1325,7 +1310,7 @@ Value Added (kr.)
 
 The difference between the value of production and consumption. Essentially the economic value that a business adds to its inputs before passing the product on to the next stage in the production process or to the final consumer.
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-vtv
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/gf-vtv)
 
 ### `JKOD` / DB: [`firm`]
 
@@ -1347,14 +1332,14 @@ Journal code. Internal code indicating the source from which the company's accou
 - '8' = Completed by DST alone on the basis of alternative sources (eg SKAT, E and S, Danish - Medicines Agency)
 - '9' = Waiting
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/regnskabsstatistik-for-private-byerhverv/jkod
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/regnskabsstatistik-for-private-byerhverv/jkod)
 
 ### `JUR_BEL_KOM_KODE` / DB: [`firm`]
 
 Company municipality code.
 
 Encodings available in the documentation:
-https://www.dst.dk/da/Statistik/dokumentation/Times/Erhvervsregister/JUR-BEL-KOM-KODE
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Erhvervsregister/JUR-BEL-KOM-KODE)
 
 ### `JUR_BEL_LDEL_KODE` / DB: [`firm`]
 
@@ -1364,7 +1349,7 @@ Country code in 2007
 
 [NO DOCUMENTATION AVAILABLE]
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/jur-bel-ldel-kode
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/generel-firmastatistik--esdvh-/jur-bel-ldel-kode)
 
 ### `JUR_BEL_REGION_KODE` / DB: [`firm`]
 
@@ -1395,13 +1380,13 @@ Company region code.
 - '97' = WHOLE COUNTRY
 - '98' = Unkwown
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/jur-bel-region-kode
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/jur-bel-region-kode)
 
 ### `JUR_FRA_DATO` / DB: [`firm`]
 
 Company start date in the registry.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Erhvervsregister/JUR-FRA-DATO
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Erhvervsregister/JUR-FRA-DATO)
 
 ### `JUR_FUNKKODE` / DB: [`firm`]
 
@@ -1462,20 +1447,20 @@ Breakdown of workplaces into different public and private sectors.
 - '91' = International organizations (international organizations, eg EU institutions and foreign embassies in DK)
 - '99' = Not provided
 
-https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/jur-funkkode
+[Official Documentation link]https://www.dst.dk/da/statistik/dokumentation/times/generel-firmastatistik/jur-funkkode)
 
 ### `JUR_TIL_DATO` / DB: [`firm`]
 
 Company end date in the registry.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Erhvervsregister/JUR-TIL-DATO
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Erhvervsregister/JUR-TIL-DATO)
 
 ### `JUR_VIRK_FORM` / DB: [`firm`]
 
 Code for business legal form (e.g. cooperative, individual company, limited company, etc.)
 
 Encodings available in the documentation:
-https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/jur-virk-form
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/generel-firmastatistik/jur-virk-form)
 
 ### `R_TID` / DB: [`firm`]
 
@@ -1491,19 +1476,19 @@ I guess it's the date of when the data was uploaded/refreshed.
 
 10 digits Production Unit Number. Also called "P number", its a unique ID for each physical location from which a company operates.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/prodnr
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/forskningsservice/prodnr)
 
 ## `ANSID` / DB: [`frpe`]
 
 Employment Identification. A person may have several different if the person has been employed in several places over a year.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/ansid
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/ansid)
 
 ### `AAR` / DB: [`firm`,`frpe`]
 
 Year
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/aar
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/aar)
 
 ### `AFLORM` / DB: [`frpe`]
 
@@ -1524,16 +1509,16 @@ From 2002 - Present:
 - '0' = Fix payment
 - '1' = Hourly payment
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/aflform
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/aflform)
 `
 
 ### `ALDER_LON` / DB: [`frpe`]
 
 Age at the time of the employment relationship.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/alder-lon
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/alder-lon)
 
-### `FRAVAARSAG`
+### `FRAVAARSAG` / DB: [`frpe`]
 
 Reason for work absence.
 
@@ -1542,7 +1527,7 @@ Reason for work absence.
 - '1300' = Work accident
 - '1400' = Maternity and Adoption Leave
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/fravaer/fravaarsag
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/fravaer/fravaarsag)
 
 ### `BARSELVAEGT` / DB: [`frpe`]
 
@@ -1552,9 +1537,9 @@ It is enumerated at the company level, so that all persons in the same company r
 
 Weight of `FRAVAARSAG` = 1400 (Maternity and Adoption Leave) over other absence causes.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/barselvaegt
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/barselvaegt)
 
-### `FRAVVAEGT`
+### `FRAVVAEGT` / DB: [`frpe`]
 
 Absence weight.
 
@@ -1562,13 +1547,13 @@ The absenteeism weight is only used in the private sector and has the value 1 fo
 
 Weight of absence (absence) own illness (1100), children's illness (1200) and work accident (1300) over other absence causes.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/fravvaegt
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/fravvaegt)
 
 ### `VAEGT_ESR` / DB: [`frpe`]
 
 Business total absence registered weight
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/vaegt-esr
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/vaegt-esr)
 
 ### `BRAARB` / DB: [`frpe`]
 
@@ -1579,7 +1564,7 @@ It uses the six-digit NACE classification code following Dansk Branchekode 2007.
 
 2 people within the same company can work in different workplaces (`PRODNR`) and different industries (e.g. HR / Tech), therefore have different `BRAARB`.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/braarb
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/braarb)
 
 ### `BRAFIR` / DB: [`frpe`]
 
@@ -1588,7 +1573,7 @@ Legal Business code for the company the person is employeed.
 Six-digit NACE classification code following Dansk Branchekode 2007.
 (see `JUR_HOVED_BRA_DB07`)
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/brafir
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/brafir)
 
 ### `DATOOPRET` / DB: [`frpe`]
 
@@ -1596,7 +1581,7 @@ Date of creation of the data.
 
 No much documentation available, but my guess is that when the data entry was created. For example the 2011 data (`frpe2011`) was created aferwards (e.g. `DATOOPRET` = 2013) as it takes time to collect company data.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/datoopret
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/datoopret)
 
 ### `FRAVPERIODE` / DB: [`frpe`]
 
@@ -1606,7 +1591,7 @@ Number of periods of absence in the counting year. If this person did not have a
 
 Unless rare exceptions, its categorical variable (empty or 1).
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/fravperiode
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/fravperiode)
 
 ### `FRAVTIMER` / DB: [`frpe`]
 
@@ -1614,19 +1599,19 @@ Absence hours.
 
 Number of absence hours in the part of the absence period that lies in the counting year.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/fravaer/fravtimer
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/fravaer/fravtimer)
 
 ### `FRAV_FRADATO` / DB: [`frpe`]
 
 Start date of the absence period.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/frav-fradato
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/frav-fradato)
 
 ### `FRAV_TILDATO` / DB: [`frpe`]
 
 End date of absence period.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/frav-tildato
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/frav-tildato)
 
 ### `FUNK` / DB: [`frpe`]
 
@@ -1644,13 +1629,13 @@ Danish version of ISCO-08 by the International Labor Organization (ILO). Classif
 
 Encoding in the documentation:
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/funk
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/funk)
 
 ### `KALENDERDAGE` / DB: [`frpe`]
 
 Number of calendar days (includes weekends and holidays) of absence. Calculated from `FRAV_FRADATO` to `FRAV_TILDATO`
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/kalenderdage
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/kalenderdage)
 
 ### `KOMARB` / DB: [`frpe`]
 
@@ -1660,7 +1645,7 @@ Municipality of the employee works linked to the workplace.
 
 Encodings: https://www.dst.dk/en/Statistik/dokumentation/nomenklaturer/nuts
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/komarb
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/komarb)
 
 ### `REFERENCETID` / DB: [`frpe`]
 
@@ -1668,11 +1653,11 @@ Datetime reference.
 
 (Eg. `REFERENCETID` = 2011-31-12 and `AAR` = 2011 for all rows in `frpe2011`)
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/referencetid
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/referencetid)
 
 ### `REFERENCTYPE` / DB: [`frpe`]
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/referencetype
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/referencetype)
 
 ### `SEKTOR` / DB: [`frpe`]
 
@@ -1682,7 +1667,7 @@ Classification of the worker sector into public/private.
 - '2' = State
 - '3' = Municipality / region
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/sektor
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/fravaer/sektor)
 
 ### `ARBGNRTI` / DB: [`idas`]
 
@@ -1690,167 +1675,167 @@ Workplace ID - To
 
 This is the identifier for the workplace after a change (like a merger or split). Used to track workplace transitions.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbgnrti
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbgnrti)
 
-### ARBGNRFR / DB: [`idas`]
+### `ARBGNRFR` / DB: [`idas`]
 
 Workplace ID - From
 
 This is the identifier for the workplace before a change (like a merger or split). Used to track workplace transitions.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbgnrfr
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbgnrfr)
 
-### AARSVRK / DB: [`idas`]
+### `AARSVRK` / DB: [`idas`]
 
 FTEs / Full-time Equivalent Employees
 
 Measures the total labor input converted to full-time positions, including part-time workers converted to full-time equivalents.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/aarsvrk
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/aarsvrk)
 
-### ANDELOPS / DB: [`idas`]
+### `ANDELOPS` / DB: [`idas`]
 
 Percentage of employees (in integers) that remained from a closed Workplace ID to a the new Workplace ID after a merge or disolution.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andelops
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andelops)
 
-### ANDELUDS / DB: [`idas`]
+### `ANDELUDS` / DB: [`idas`]
 
 Percentage of employees (in integers) that were transfered from a closed Workplace ID to a different Workplace after a merge or disolution.
 
 Indicates the proportion of a workplace that was split off to form new units
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andeluds
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andeluds)
 
-### ANDFA / DB: [`idas`]
+### `ANDFA` / DB: [`idas`]
 
 Percentage of Skilled Workers in the Workplace.
 
 Represents the proportion of "Basic" workers (`PTILL` = 35).The "basic" comes from `SOCIO` - used to be "skilled".
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andfa
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andfa)
 
-### ANDHF / DB: [`idas`]
+### `ANDHF` / DB: [`idas`]
 
 Percentage of Workers at the Highest level in the Workplace.
 
 Represents the proportion of "top executives and employees at the highest level (PSTILL=31-33).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andhf
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andhf)
 
-### ANDIF / DB: [`idas`]
+### `ANDIF` / DB: [`idas`]
 
 Percentage of Non-Skilled Workers in the Workplace.
 
 Represents the proportion of "Other employee" workers (`PTILL` = 36).The "Other employee" comes from `SOCIO` - used to be "non-skilled worker".
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andif
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andif)
 
-### ANDLEDAR / DB: [`idas`]
+### `ANDLEDAR` / DB: [`idas`]
 
 Percentage of Unemployed Employees generated
 
 Represents the number of employees who has been employed at the workplace the year before and been unemployed in the year of the registry.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/ida-databasen/ida-arbejdssteder/andledar
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/ida-databasen/ida-arbejdssteder/andledar)
 
-### ANDLF / DB: [`idas`]
+### `ANDLF` / DB: [`idas`]
 
 Percentage of "Mid-level" Workers in the Workplace.
 
 Represents the proportion of "Mid-level or intermediate" workers (`PTILL` = 34).The "Intermediate" comes from `SOCIO` - used to be "non-skilled worker".
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andlf
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/andlf)
 
-### ANTAAR / DB: [`idas`]
+### `ANTAAR` / DB: [`idas`]
 
 Number of Employees.
 
 This variable is similar to `AARSVRK`. The difference `ANTAAR` counts the number of people (number of heads) who have been employed at the relevant workplace, whereas `AARSVRK` converts the employment to full-time employees (FTEs) at the workplace.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/antaar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/antaar)
 
-### ANTONOV / DB: [`idas`]
+### `ANTONOV` / DB: [`idas`]
 
 Number of November-employees.
 
 Basically, an end of the year headcount. All November-related jobs at the workplace, whether the job is the primary, secondary, tertiary, etc. Jobs consist of employment relationships where you usually work the equivalent of 1 hour a week at the reference time at the end of November.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/antnov
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/antnov)
 
-### ARBSTK / DB: [`idas`]
+### `ARBSTK` / DB: [`idas`]
 
 Workplace Status Code.
 
 Indicates the current status of the workplace (active, closed, etc.).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstk
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstk)
 
-### ARBSTKFR / DB: [`idas`]
+### `ARBSTKFR` / DB: [`idas`]
 
 Workplace Status Code - From.
 
 Status code of the workplace before a transition or change.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstkfr
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstkfr)
 
-### ARBSTKTI / DB: [`idas`]
+### `ARBSTKTI` / DB: [`idas`]
 
 Workplace Status Code - To.
 
 Status code of the workplace after a transition or change.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstkti
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/arbstkti)
 
-### BRANCHE1 / DB: [`idas`]
+### `BRANCHE1` / DB: [`idas`]
 
 NACE Industry Code (DB93) for the Workplace.
 
 From `1993` on the grouping changed. This variable no longer exist, replaced by `BRANCHE3`).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/branche03
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/branche03)
 
-### EJERKO / DB: [`idas`]
+### `EJERKO` / DB: [`idas`]
 
 Ownership type.
 
 Indicates the type of ownership of the workplace (private, public, etc.).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/ejerko
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/ejerko)
 
-### ENDNDL / DB: [`idas`]
+### `ENDNDL` / DB: [`idas`]
 
 Final Closure.
 
 Indicates whether the workplace has permanently closed down.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/endnedl
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/endnedl)
 
-### FILIAL / DB: [`idas`]
+### `FILIAL` / DB: [`idas`]
 
 Branch/Subsidiary Indicator.
 
 Indicates whether the workplace is a branch/subsidiary of another company.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/filial
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/filial)
 
-### FRELFREM / DB: [`idas`]
+### `FRELFREM` / DB: [`idas`]
 
 Internal/External Closure via Spinoff
 
 Indication of whether two workplaces (one closed down and one "absorbing") come from the same company.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/frelfrem
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/frelfrem)
 
-### FRELTILB / DB: [`idas`]
+### `FRELTILB` / DB: [`idas`]
 
 Internal/External Creation via Spinoff.
 
 Indication of whether a created workplace (within last 2 years) belongs to the same company as the workplace from which it has been separated.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/freltilb
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/freltilb)
 
-### IDTILB / DB: [`idas`]
+### `IDTILB` / DB: [`idas`]
 
 Identity change indicator.
 
@@ -1868,97 +1853,97 @@ Indicates a possible change in the identity of a workplace seen back in time, ie
 - 'T2' = Access from work with November employees in the previous year (in the same industry) 01-01-1980 31-12-3000
 - 'T3' = Access of a "fictional" entity in connection with a formal change of ownership
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/idtilb
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/idtilb)
 
-### KVANDFA / DB: [`idas`]
+### `KVANDFA` / DB: [`idas`]
 
 `ANDFA`, only for women.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandfa
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandfa)
 
-### KVANDHF / DB: [`idas`]
+### `KVANDHF` / DB: [`idas`]
 
 `ANDHF`, only for women.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandhf
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandhf)
 
-### KVANDIF / DB: [`idas`]
+### `KVANDIF` / DB: [`idas`]
 
 `ANDIF`, only for women.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandif
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandif)
 
-### KVANDLF / DB: [`idas`]
+### `KVANDLF` / DB: [`idas`]
 
 `ANDLF`, only for women.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandlf
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/kvandlf)
 
-### LBNRFREM / DB: [`idas`]
+### `LBNRFREM` / DB: [`idas`]
 
 Unique serial number per workplace (`LBNR`) for the following year.
 
 Notice that if `IDTILB` = `B1` or `B2` , the `LBNR` is preserved and therefore `LBNR` is equal to `LBNRFREM`
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lbnrfrem
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lbnrfrem)
 
-### LBNRTILB / DB: [`idas`]
+### `LBNRTILB` / DB: [`idas`]
 
 Unique serial number per workplace (`LBNR`) for the previous year.
 
 Notice that if `IDTILB` = B1-B2 , the `LBNR` was preserved and therefore `LBNR` is equal to `LBNRTILB`
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lbnrtilb
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lbnrtilb)
 
-### LEDPERG / DB: [`idas`]
+### `LEDPERG` / DB: [`idas`]
 
 Number of periods of unemployment that workplace generated among main employees (`PTILL` = 35-36) that worked the previous year.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/ledperg
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/ledperg)
 
-### LGRGNSAR / DB: [`idas`]
+### `LGRGNSAR` / DB: [`idas`]
 
 Average annual unemployment rate.
 
 [TO BE DONE]
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lgrgnsar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lgrgnsar)
 
-### LONAAR / DB: [`idas`]
+### `LONAAR` / DB: [`idas`]
 
 Sum of Salaries for all employees.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lonaar
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/lonaar)
 
 ### `LONGNS` / DB: [`idas`]
 
 Average hourly salary for all main employees.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longns
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longns)
 
-### LONGNSFA / DB: [`idas`]
+### `LONGNSFA` / DB: [`idas`]
 
 Average hourly salary for Skilled Workers in the Workplace (`PTILL` = 35).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnsfa
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnsfa)
 
-### LONGNSHF / DB: [`idas`]
+### `LONGNSHF` / DB: [`idas`]
 
 Average hourly salary for the Highest level in the Workplace (`PTILL` = 31-33).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnshf
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnshf)
 
-### LONGNSIF / DB: [`idas`]
+### `LONGNSIF` / DB: [`idas`]
 
 Average hourly salary for Non-Skilled Workers in the Workplace (`PTILL` = 36).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/LONGNSIF
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/LONGNSIF)
 
-### LONGNSLF / DB: [`idas`]
+### `LONGNSLF` / DB: [`idas`]
 
 Average hourly salary for "Mid-level or intermediate" workers in the Workplace (`PTILL` = 34).
 
-https://www.dst.dk/da/tilsalg/forskningsservice/dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnslf
+[Official Documentation link]https://www.dst.dk/da/tilsalg/forskningsservice/dokumentation/hoejkvalitetsvariable/ida-arbejdssteder/longnslf)
 
 ### `AKTIEINDK` / DB: [`ind`, `indh`]
 
@@ -1966,7 +1951,7 @@ Stock Income (kr.)
 
 **Available from 1980 - Present**. Income earned from stocks and dividends.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/aktieindk
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/aktieindk)
 
 ### `ARBFORS` / DB: [`ind`, `indh`]
 
@@ -1980,7 +1965,7 @@ Unemployment benefits and education allowances (kr.)
 
 **Available from 1980 - Present**. Payments for unemployment insurance and early retirement schemes.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/arblhumv
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/arblhumv)
 
 ### `BESKST` / DB: [`ind`, `indh`]
 
@@ -1998,7 +1983,7 @@ Employment status.
 - '08' = Other
 - '99' = Not in AKM
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/beskst
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/beskst)
 
 ### `BESKST13` / DB: [`ind`]
 
@@ -2020,7 +2005,7 @@ Employment status (2013 Definition)
 - '12' = Cash Beneficiary
 - '99' = Not in AKM
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/beskst13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/beskst13)
 
 ### `BRUTTO` / DB: [`ind`, `indh`]
 
@@ -2028,15 +2013,15 @@ Gross Income (kr.)
 
 **Only available from 1980 to 2013**. Total taxable gross income before deductions.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/brutto
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/brutto)
 
 ### `DISPON_13` / DB: [`ind`]
 
 Disposable Income (kr.) (2013 Definition).
 
-**Available from 1980 - Present**. Income available after taxes and mandatory payments (e.g. labor market contributions). It can be negative for self-employed people. According to new 2013 definitions (https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=arbe&fo=rev13--pdf&ext={2})
+**Available from 1980 - Present**. Income available after taxes and mandatory payments (e.g. labor market contributions). It can be negative for self-employed people. According to new 2013 definitions https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=arbe&fo=rev13--pdf&ext=){2})
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/dispon-13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/dispon-13)
 
 ### `DISPON_NY` / DB: [`ind`, `indh`]
 
@@ -2044,7 +2029,7 @@ Disposable Income (kr.)
 
 **Only available from 1980 to 2013**. Updated calculation of disposable income. Please check the documentation below if you use both `DISPON_13` in combination with `DISPON_NY`
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/dispon-ny
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/dispon-ny)
 
 ### `EJENDOMSVURDERING` / DB: [`ind`, `indh`]
 
@@ -2052,7 +2037,7 @@ Property Assets (kr.)
 
 **Available from 1994 - Present**. Annual valuation of owned property. The source of the variables `EJENDOMSVURDERING` and `KOEJD` are two different public registers, where the withdrawal time from the registers can cause differences in the statements from the two registers, where there should theoretically be the same value.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/ejendomsvurdering
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/ejendomsvurdering)
 
 ### `ERHVERVSINDK` / DB: [`ind`, `indh`]
 
@@ -2060,15 +2045,15 @@ Business Income (kr.)
 
 **Only available from 1994 to 2013**. Business income, salary and net profit of self-employed business incl. certain fees
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/erhvervsindk
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/erhvervsindk)
 
 ### `ERHVERVSINDK_13` / DB: [`ind`]
 
 Business Income (2013 Definition).
 
-**Available from 1980 - Present**. Business income according to new 2013 definitions (https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=arbe&fo=rev13--pdf&ext={2})
+**Available from 1980 - Present**. Business income according to new 2013 definitions https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=arbe&fo=rev13--pdf&ext=){2})
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/erhvervsindk-13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/erhvervsindk-13)
 
 ### `ERHVERVSINDK_GL` / DB: [`ind`]
 
@@ -2076,7 +2061,7 @@ Business Income (kr.) (Old Definition)
 
 **Only available from 1980 to 2013**. Replaced by the variable `ERHVERVSINDK_13`.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/erhvervsindk-gl
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/erhvervsindk-gl)
 
 ### `FORMREST_NY05` / DB: [`ind`, `indh`]
 
@@ -2090,7 +2075,7 @@ Gross Capital Income (kr.)
 
 **Available from 1980 - Present**. The gross income is the sum of interest income and other wealth income, which consists of dividends and realized losses / gains on securities. Excl. calculated rental value of own housing, as well as from 1987 excl. income from self-employment.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/FORMUEINDK-BRUTTO
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/FORMUEINDK-BRUTTO)
 
 ### `FORMUEINDK_NY` / DB: [`ind`, `indh`]
 
@@ -2098,7 +2083,7 @@ Capital Income (kr.) (2013 Definition)
 
 **Only available from 1980 to 2013**. Replaced by the variable `FORMUEINDK_BRUTTO`
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/formueindk-ny
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/formueindk-ny)
 
 ### `FRADRAG` / DB: [`ind`, `indh`]
 
@@ -2106,7 +2091,7 @@ Total Deductions (kr.)
 
 **Available from 1980 - Present**. Deductions for private payments for pension schemes, interest expenses paid, driving deductions, maintenance and child support, expenses for unemployment insurance, professional quota, early retirement scheme, employment deduction and more.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/fradrag
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/fradrag)
 
 ### `KOEJD` / DB: [`ind`, `indh`]
 
@@ -2114,7 +2099,7 @@ Property Assets (kr.)
 
 **Available from 1983 - Present**. Annual valuation of owned property. The source of the variables `EJENDOMSVURDERING` and `KOEJD` are two different public registers, where the withdrawal time from the registers can cause differences in the statements from the two registers, where there should theoretically be the same value.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/KOEJD
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/KOEJD)
 
 ### `LOENMV` / DB: [`ind`]
 
@@ -2122,7 +2107,7 @@ Total salary income (kr.)
 
 **Only available from 1980 to 2013**. Taxable salary incl. perks, tax-free pay, anniversary and severance pay, and value of stock options.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/loenmv
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/loenmv)
 
 ### `LOENMV_13` / DB: [`ind`, `indh`]
 
@@ -2130,7 +2115,7 @@ Total salary income (kr.) (2013 Definition)
 
 **Available from 1980 - Present**. Taxable salary incl. perks, tax-free pay, anniversary and severance pay, and value of stock options.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/LOENMV-13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/LOENMV-13)
 
 ### `NETOVSKUD` / DB: [`ind`, `indh`]
 
@@ -2138,7 +2123,7 @@ Net Profit (kr.)
 
 **Only available from 1994 to 2013**.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/netovskud
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/netovskud)
 
 ### `NETOVSKUD_13` / DB: [`ind`]
 
@@ -2146,7 +2131,7 @@ Net Profit (kr.) (2013 Definition)
 
 **Available from 1980 - Present**. Net profit from self-employment including capital income and expenses (including interest) . Company income is self-declared B income, as opposed to salary and transfer income, which is reported to the payer's tax.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/NETOVSKUD-13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/NETOVSKUD-13)
 
 ### `NETOVSKUD_GL` / DB: [`ind`, `indh`]
 
@@ -2154,7 +2139,7 @@ Net Profit (kr.) (Old Definition)
 
 **Only available from 1980 to 2013**.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/netovskud-gl
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/netovskud-gl)
 
 ### `OVSKEDJO2_NY` / DB: [`ind`]
 
@@ -2162,7 +2147,7 @@ Accommodation rental value (kr.)
 
 **Only available from 1980 to 2006**. From 2007, this variable (estimated value) is replaced by the variable `OVSKEJD07` (calculated rental value of own housing).
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/ovskejd02-ny
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/ovskejd02-ny)
 
 ### `PERINDKIALT` / DB: [`ind`]
 
@@ -2170,7 +2155,7 @@ Total Personal Income (kr.)
 
 **Only available from 1980 to 2013**. Total personal income excl. calculated rental value of own housing (`OVSKEJD07`) and before deduction of interest expenses.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/perindkialt
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/perindkialt)
 
 ### `PERINDKIALT_13` / DB: [`ind`]
 
@@ -2178,7 +2163,7 @@ Total Personal Income (kr.) (2013 Definition).
 
 **Available from 1980 - Present**. Total personal income under 2013 revision. Total personal income excl. calculated rental value of own housing (`OVSKEJD07`) and before deduction of interest expenses.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/perindkialt-13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/perindkialt-13)
 
 ### `PEROEVRIGFORMUE` / DB: [`ind`]
 
@@ -2188,7 +2173,7 @@ Income/profits from appartments rental, holiday rental, profits from sale of rea
 
 **Only available from from 1980 to 2013**. Replaced by `PEROEVRIGFORMUE_13`.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/peroevrigformue
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/peroevrigformue)
 
 ### `PEROEVRIGFORMUE_13` / DB: [`ind`]
 
@@ -2196,7 +2181,7 @@ Rental Income (kr.) (2013 Definition).
 
 **Only available from 1980 to 2013**.Income/profits from appartments rental, holiday rental, profits from sale of real state, etc.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/peroevrigformue-13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/peroevrigformue-13)
 
 ### `PERSAMLINKNETRENT_NY` / DB: [`ind`]
 
@@ -2204,7 +2189,7 @@ Total Personal Income with Net interest (kr.)
 
 **Only available from 1980 to 2013**. Updated calculation of total income including deductible interest expenses on the tax bracket, deduction of labor market contributions and special pension contributions.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/persamlinknetrent-ny
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/persamlinknetrent-ny)
 
 ### `PERSONINDK` / DB: [`ind`, `indh`]
 
@@ -2212,7 +2197,7 @@ Total Personal income without Capital income (kr.)
 
 **Available from 1980 - Present**. Capital income is a term for the return on a person's or family's assets. This includes, for example, interest, share dividends, and realized gains and losses on shares and other securities, etc.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/PERSONINDK
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/PERSONINDK)
 
 ### `QAKTIVF_NY05` / DB: [`ind`, `indh`]
 
@@ -2220,7 +2205,7 @@ Total Assets (kr.) (2005 Definition).
 
 **Available from 1995 - Present**. Value of personal active assets under 2005 definition excluding pension.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/qaktivf-ny05
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personindkomster/qaktivf-ny05)
 
 ### `QIVARK` / DB: [`ind`, `indh`]
 
@@ -2228,7 +2213,7 @@ Tax on Capital Income (kr.)
 
 **Only available from 1988 - 2001**. Pleace notice that the tax percentage change depending on the years that will affect this quantity.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/QAKTSKA
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/QAKTSKA)
 
 ### `QPASSIVN` / DB: [`ind`, `indh`]
 
@@ -2236,7 +2221,7 @@ Liabilities to the State (kr.)
 
 **Available from 1995 - Present**. Liabilities at year-end including mortgage debt, bank debt, or student debt (Hypotekbanken). Private debt is not included.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/QPASSIVN
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/QPASSIVN)
 
 ### `QSPLINDK` / DB: [`ind`, `indh`]
 
@@ -2246,7 +2231,7 @@ Taxable Income (kr.)
 
 For details, please check the documentation as it changes in relation with the danish legislation at the time.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/QSPLINDK
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/QSPLINDK)
 
 ### `RENTEINDK` / DB: [`ind`, `indh`]
 
@@ -2254,7 +2239,7 @@ Total taxable interest income from Denmark (kr.)
 
 **Only available from 1980 - 2013**.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/renteindk
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/renteindk)
 
 ### `SAMLINK_NY` / DB: [`ind`, `indh`]
 
@@ -2262,7 +2247,7 @@ Total Personal Income (kr.)
 
 **Only available from 1980 to 2013**. Total income incl. calculated rental value before deduction of interest expenses, and before deduction of labor market contributions and special pension contributions.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/samlink-ny
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/samlink-ny)
 
 ### `SKATMVIALT_13` / DB: [`ind`]
 
@@ -2272,7 +2257,7 @@ Taxes (kr.) (2013 Definition)
 
 For details, please check the documentation as it changes in relation with the danish legislation at the time.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/SKATMVIALT-13
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/SKATMVIALT-13)
 
 ### `SKATMVIALT_NY` / DB: [`ind`, `indh`]
 
@@ -2280,7 +2265,7 @@ Taxes (kr.)
 
 **Only available from 1980 - 2013**. Amount of taxes corresponding to the person including labor market contribution, pension, and other.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/skatmvialt-ny
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/skatmvialt-ny)
 
 ### `SKATTOT_NY` / DB: [`ind`, `indh`]
 
@@ -2288,7 +2273,7 @@ Total Tax (kr.)
 
 **Only available from 1980 - 2013**. The variable consists of state tax, county tax (1980-2006), health contribution (from 2007), municipal tax, church tax, wealth tax (before 1997), special income tax (before 1996), provisionally paid corporate tax (from 1987), property value tax (from 2000), state pension contribution. The final tax is calculated after deduction of various reductions and the inclusion of various tax surcharges.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/skattot-ny
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/skattot-ny)
 
 ### `VIRKORDIND` / DB: [`ind`, `indh`]
 
@@ -2296,14 +2281,14 @@ Business scheme Income (kr.)
 
 **Available from 1987 - Present**. Special scheme for self-employed and artists, it gives the self-employed the opportunity to tax some of their income from the company from a year of high income to a year of low income.
 
-https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/VIRKORDIND
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/Personindkomst/VIRKORDIND)
 
 ### `DISCOALLE_INDK` / DB: [`indh`]
 
 **Only available from 1991 - 2009**. Employment Classification code.
 
 Encodings available in the documentation:
-https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/discoalle-indk
+[Official Documentation link]https://www.dst.dk/da/Statistik/dokumentation/Times/personindkomst/discoalle-indk)
 
 ### `FODTIDATO` / DB: [`indh`]
 
@@ -2317,7 +2302,7 @@ Gender (CPR based).
 - '2' = Female
 - '9' = Unknown / Company
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/koen
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/folketal/koen)
 
 ### `NACE` / DB: [`indh`]
 
@@ -2335,4 +2320,4 @@ Please check `PERINDKIALT_13` from Database `ind` instead.
 
 Please check `STILL` from Database `idan` instead.
 
-https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personers-tilknytning-til-arbejdsmarkedet-set-over-hele-aaret--akm-/socio
+[Official Documentation link]https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable/personers-tilknytning-til-arbejdsmarkedet-set-over-hele-aaret--akm-/socio)
