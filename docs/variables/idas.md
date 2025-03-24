@@ -1,4 +1,4 @@
-# IDA-Workplace Database (IDAS) (1980-2013)
+# IDA-Workplace Database (`idas`)
 
 
 ### `ARBGNR`

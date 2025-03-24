@@ -1,6 +1,6 @@
 
 
-## What's Statistics Denmark (DST)?
+## What's Statistics Denmark (DST) ?
 
 _"Statistics Denmark offers remote access to all individual level data that is necessary to carry out a serious research project. [...] individual level data from Statistics
 Denmark is not delivered to any external firm, institution, or person. Instead, datasets and linkages between datasets constructed at Statistics Denmark are stored at Statistics Denmark."_ [^1]

@@ -1,4 +1,4 @@
-# Personal Income Database (1980-2012)
+# Personal Income Database (`indh`)
 
 ### `PNR`
 
