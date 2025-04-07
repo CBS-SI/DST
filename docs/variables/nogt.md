@@ -1,7 +1,6 @@
 # Opgang Residential Old-New Link Database (`nogt`)
 
 
-
 ### `OPGIKOM`
 
 Opgang housing project. The address in the municipality (road no., House no., House letter). See `BOPIKOM` for further description.
