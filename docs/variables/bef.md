@@ -2,6 +2,7 @@
 
 
 ### `PNR`
+
 Unique identification of person is used as key to `PERSON_ID`.
 
 People's anonimized CPR. All CPR PNRs are converted to a unidentified PERSON_ID.
