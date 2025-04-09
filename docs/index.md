@@ -19,3 +19,5 @@ New petitions for documentation (e.g. *"Make variable documentation for `lon` da
 - [Variable Searching tool](https://www.dst.dk/da/TilSalg/Forskningsservice/Dokumentation/hoejkvalitetsvariable)
 
 - [Registry list](https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html)
+
+- [Tutorials on Denmark's Data Window (danish only)](https://www.dst.dk/da/TilSalg/data-til-forskning/danmarks-datavindue/videovejledninger)
