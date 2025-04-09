@@ -1,0 +1,38 @@
+[data-md-color-scheme="cbs"] {
+    --md-primary-fg-color: #4a67aa;
+    --md-secondary-fg-color: #f7f7f3;
+    --md-accent-fg-color: #666666;
+}
+
+.center-table {
+    text-align: center;
+}
+.md-typeset .center-table :is(td, th):not([align]) {
+    text-align: initial; /* Reset alignment for table cells */
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
