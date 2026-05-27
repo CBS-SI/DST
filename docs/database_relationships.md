@@ -4,7 +4,6 @@ hide:
   - toc
 ---
 
-
 - You can hover the `database` and `variables` names to display brief descriptions.
 - Connections between tables will be highlighted as well.
 
@@ -17,4 +16,4 @@ hide:
     style="display: block; margin: auto;">
 </iframe>
 
-Please note that *not* all variables are included for easy user interaction. You can find all variables definitions under `Variables documentation` section and a full diagram following [this link (dbdiagram.io)](https://dbdiagram.io/e/67dd532f75d75cc844f7fe9f/67dd53cf75d75cc844f80f4e).
+Please note that _not_ all variables are included for easy user interaction. You can find all variables definitions under `Variables documentation` section and a full diagram following [this link (dbdiagram.io)](https://dbdiagram.io/e/67dd532f75d75cc844f7fe9f/67dd53cf75d75cc844f80f4e).

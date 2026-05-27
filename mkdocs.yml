@@ -5,7 +5,7 @@ repo_name: CBS-SI/DST
 site_url: https://cbs-si.github.io/DST/
 nav:
   - Home: "index.md"
-  - Intro to new users of Denmark Statistics: "intro.md"
+  - Intro: "intro.md"
   - Variables Documentation:
       - bef: "variables/bef.md"
       - poppers: "variables/poppers.md"
@@ -29,7 +29,8 @@ nav:
       - ophgin: "variables/ophgin.md"
       - udda: "variables/udda.md"
       - veuv: "variables/veuv.md"
-  - Databases Relationships: "database_relationships.md"
+  - Registry Relationships: "database_relationships.md"
+  - Other Danish registries: "danish_registries.md"
 theme:
   name: material
   logo: assets/images/CBS_logo.png

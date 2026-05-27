@@ -1,4 +1,4 @@
-
+# Intro to new users of Denmark Statistics
 
 ## What's Statistics Denmark (DST) ?
 
@@ -9,8 +9,9 @@ _"Researchers employed at specific authorised environments can establish remote 
 
 _"Although researcher may get access to rather detailed individual level data, they are only allowed to publish statistical analyses and results at an aggregate level where no single person or enterprise may be identified."_ [^1]
 
-[^1]: [Introduction to Danish (nationwide) registers on health and social
-issues: Structure, access, legislation, and archiving](https://journals.sagepub.com/doi/epdf/10.1177/1403494811399956)
+[^1]:
+    [Introduction to Danish (nationwide) registers on health and social
+    issues: Structure, access, legislation, and archiving](https://journals.sagepub.com/doi/epdf/10.1177/1403494811399956)
 
 ## Security Rules Summary
 
@@ -35,13 +36,12 @@ Following the official [rules for data safety under the microdata scheme hereund
 | K   | 150      | Aarhus    | 20    |
 | K   | 50       | Bornholm  | 15    |
 | M   | 0        | København | 10    |
-</div>
 
+</div>
 
 - **No Pseudonymised key variables**. Personal identification numbers, CVR numbers, workplace numbers, address codes, etc. are always considered microdata as they indicate a unique number that refers directly to a single person or company.
 
 - No tables with less than three observations per cell. Microdata Examples:
-
 
 <div class="center-table" markdown>
 | Bopæl          | Antal personer |
@@ -95,7 +95,7 @@ dominance"_ [^2]
 
 - You can list data in the research machine to validate it, but you cannot export it as it would be a microdata leak.
 
-- *External Sources*. Once you submit your data (e.g. a survey) to be linked to DST data, it is considered microdata regarless of the source and hold the same security standards are DST own data.
+- _External Sources_. Once you submit your data (e.g. a survey) to be linked to DST data, it is considered microdata regarless of the source and hold the same security standards are DST own data.
 
 ## Penalties (researcher scheme)
 
