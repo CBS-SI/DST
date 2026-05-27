@@ -94,25 +94,17 @@ See more here: [https://www.antonpottegaard.dk/publications/reviews/o80.pdf](htt
 
 ## The Danish Register of Causes of Death
 
-Managed by The Danish Health Database (_Sundhedsdatabanken_).
+It is owned by The National Board of Health and managed by The Danish Health Database (_Sundhedsdatabanken_).
 
-The data includes underlying cause, contributing factors and manner of death.
+The data covers all deaths among citizens. Itincludes underlying cause, contributing factors and cause of death since 1875. However, not all of these data is digitalized and they only have computerized individual records from the 1970s onwards. You can also go to the The Historical Cause of Death Register - HDAR managed by The National Archive for digitalized data from the 1920s onwards.
 
-Since 1875, the National Board of Health has maintained the register covering all deaths among citizens dying in Denmark.
+Notice that it only includes deaths occurring in Denmark.
 
-Note that "data" can be handwritten records on a ledger. I am not refering to an Excel file. Again, some of this registries are ment to be used for archival, deontology and legislative purpuses, not for research.
+The structure is one record (row) per death, so no multiple causes of death per record (e.g. no COVID + cardiovascular disease), and it uses ICD-10 codes to classify the cause of death.
 
-You can also go to the The Historical Cause of Death Register - HDAR managed by The National Archive for digitalized data.
+It is updated annually and the new data is stacked on top of the existing data.
 
-They have computerized individual records from the 1970s onwards.
-
-Only one record (row) per death (e.g. no COVID + cardiovascular disease). Also, it only includes deaths occurring in Denmark.
-
-Updated annually and the new data is stacked on top of the existing data.
-
-Uses ICD-10 codes (1994-Today).
-
-_Cabeat: Denmark has low autopsy rate (missclasification)._
+**Care**: Denmark has low autopsy rate (missclasification).
 
 See more: [https://pubmed.ncbi.nlm.nih.gov/21775346/](https://pubmed.ncbi.nlm.nih.gov/21775346/)
 
