@@ -1,0 +1,119 @@
+---
+title: Examples of MkDocs.
+subtitle: Nullam urna elit, malesuada eget finibus ut, ac tortor
+description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
+---
+
+# Reference
+
+https://squidfunk.github.io/mkdocs-material/reference/
+
+## Anotations
+
+Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
+{ .annotate }
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
+# Code
+
+``` yaml title="mkdocs.yml"
+theme:
+  features:
+    - content.code.annotate # (1)
+```
+
+1.  :man_raising_hand: Make sure you add   "features: - content.code.annotate" at your `mkdocs.yml`.
+
+
+```py title="add_numbers.py", linenums="1", hl_lines="12"
+import pdfkit
+import os
+
+# Download wkhtmltopdf from https://wkhtmltopdf.org/downloads.html
+
+# Set the path to the wkhtmltopdf executable
+
+wkhtmltopdf_path = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+
+# Configure pdfkit to use wkhtmltopdf
+
+config = pdfkit.configuration(wkhtmltopdf=wkhtmltopdf_path)
+
+# Path of HTML and PDF files
+
+path=os.getcwd()
+htmlFile = f'{path}\\index.html'
+pdfFile = f'{path}\\output.pdf'
+
+# Check if the HTML file exists before proceeding
+
+if not os.path.exists(htmlFile):
+print(f"HTML file does not exist at: {htmlFile}")
+else:
+try: # Convert HTML to PDF
+pdfkit.from_file(htmlFile, pdfFile, configuration=config)
+print(f"Successfully converted HTML to PDF: {pdfFile}")
+except Exception as e:
+print(f"An error occurred: {e}")
+```
+
+# Notes
+
+!!! note ""
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+    !!! note "Inner Note"
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+        massa, nec semper lorem quam in massa.
+
+!!! info inline "Lorem ipsum"
+
+    Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Nulla et euismod nulla.
+    Curabitur feugiat, tortor non consequat
+    finibus, justo purus auctor massa, nec
+    semper lorem quam in massa.
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+```py
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame()
+```
+
+# Diagrams
+
+What?
+
+```mermaid
+erDiagram
+  CUSTOMER ||--o{ ORDER : places
+  ORDER ||--|{ LINE-ITEM : contains
+  LINE-ITEM {
+    string name
+    int pricePerUnit
+  }
+  CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+# Lists
+
+- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+- [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In hac habitasse platea dictumst
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [ ] Praesent sed risus massa
+- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+# Footnotes
+
+[^1]: This is an amazing footnote.
